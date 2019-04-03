@@ -1,0 +1,38 @@
+{
+  "name": "blog-fziliotti",
+  "version": "1.0.0",
+  "description": "A personal blog of Fabricio Ziliotti",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp js && gulp stylus && gulp jekyll-build"
+  },
+  "keywords": [
+    "frontend",
+    "blog",
+    "css",
+    "stylus",
+    "gulp",
+    "jekyll",
+    "js"
+  ],
+  "author": "FZiliotti",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer-stylus": "^0.4.0",
+    "browser-sync": "^1.9.0",
+    "gulp": "^3.8.10",
+    "gulp-concat": "^2.4.3",
+    "gulp-imagemin": "^2.1.0",
+    "gulp-plumber": "^0.6.6",
+    "gulp-stylus": "^1.3.7",
+    "gulp-uglify": "^1.0.2",
+    "minimist": "^1.2.0",
+    "jeet": "=6.1.2",
+    "kouto-swiss": "^0.11.14",
+    "rupture": "^0.6.1"
+  },
+  "dependencies": {
+    "natives": "^1.1.6"
+  }
+}

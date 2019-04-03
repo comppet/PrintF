@@ -1,0 +1,33 @@
+{
+  "name": "PrinttF",
+  "short_name": "PrinttF",
+  "display": "standalone",
+  "background_color": "#f1f1f1",
+  "lang": "pt-BR",
+  "theme_color": "#2F3780",
+  "description": "CompPET blog to share ideas about computer science and its ecosystem.",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/BlogFziliotti/assets/img/launcher-icon-1x.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "/BlogFziliotti/assets/img/launcher-icon-2x.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "/BlogFziliotti/assets/img/launcher-icon-4x.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/BlogFziliotti/assets/img/launcher-icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "index.html"
+}
