@@ -3,7 +3,7 @@
 # ------------------------------------------------------------------------------
 #
 # Program: initpost.sh
-# Author:  Vitor Britto
+# Author:  Fabricio Ziliotti
 # Description: script to create an initial structure for my posts.
 #
 # Usage: ./initpost.sh [options] <post name>

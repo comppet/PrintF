@@ -1,10 +1,10 @@
 <section class="comments">
     <h3>Comentários</h3>
     <div id="disqus_thread"></div>
+    <script id="dsq-count-scr" src="//https-comppet-github-io-printf.disqus.com/count.js" async></script>
 </section>
 
 <script type="text/javascript">
-// ALTERAR AQUI
     var disqus_loaded = false;
     function load_disqus()
     {
@@ -13,7 +13,7 @@
             this.page.identifier = '{{page.url}}';
         };
         var d = document, s = d.createElement('script');
-        s.src = '//fabricioziliotti.disqus.com/embed.js';
+        s.src = 'https://https-comppet-github-io-printf.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
         disqus_loaded = true;
@@ -26,3 +26,6 @@
         }
     };
 </script>
+
+
+
