@@ -29,8 +29,10 @@ compress_html:
   endings: []
   profile: false
 
+
 files_to_cache:
   - "/assets/js/main.js"
+  - "/assets/js/blog.js"
 
 pages_to_cache:
   - "/cursos/"
@@ -49,4 +51,15 @@ links:
     url: /about
 
 # exclude my node related stuff
-exclude: ["package.json", "src", "node_modules"]
+exclude: [
+  'package.json',
+  'src',
+  'node_modules',
+  'vendor/bundle/ruby',
+  'package-lock.json',
+  'Readme.md',
+  'gulpfile.js',
+  'initpost.sh',
+  'testlinks.sh',
+  '.travis.yml'
+]

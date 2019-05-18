@@ -1,33 +1,56 @@
-var versao = 11;
+---
+layout: null
+---
+
+const staticCacheName = 'printf-{{ site.time | date: "%Y-%m-%d-%H-%M" }}';
 
 const filesToCache = [
-  "/BlogFziliotti/",
-  "/BlogFziliotti/cursos/",
-  "/BlogFziliotti/about/",
-  "/BlogFziliotti/tags/",
-  "/BlogFziliotti/offline/index.html",
-  "/BlogFziliotti/assets/js/main.js"
+  {% for page in site.pages_to_cache %}
+    '{{ page }}',
+  {% endfor %}
+  {% for post in site.posts %}
+    '{{ post.url }}',
+  {% endfor %}
+  {% for asset in site.files_to_cache %}
+    '{{ asset }}',
+  {% endfor %}
 ];
 
-self.addEventListener("install", function () {
-  console.log("Instalou service worker!");
+// Cache on install
+this.addEventListener("install", event => {
+  this.skipWaiting();
+
+  event.waitUntil(
+    caches.open(staticCacheName)
+      .then(cache => {
+        return cache.addAll(filesToCache);
+    })
+  )
 });
 
-self.addEventListener("activate", function () {
-  caches.open("blog-printf-" + versao).then(cache => {
-    cache.addAll(filesToCache).then(function () {
-      caches.delete("blog-printf-" + (versao - 1));
-      caches.delete("blog-printf");
-    });
-  });
+// Clear cache on activate
+this.addEventListener('activate', event => {
+  event.waitUntil(
+    caches.keys().then(cacheNames => {
+      return Promise.all(
+        cacheNames
+          .filter(cacheName => (cacheName.startsWith('printf-')))
+          .filter(cacheName => (cacheName !== staticCacheName))
+          .map(cacheName => caches.delete(cacheName))
+      );
+    })
+  );
 });
 
-self.addEventListener("fetch", function (event) {
-  let pedido = event.request;
-  let promiseResposta = caches.match(pedido).then(respostaCache => {
-    let resposta = respostaCache ? respostaCache : fetch(pedido);
-    return resposta;
-  });
-
-  event.respondWith(promiseResposta);
+// Serve from Cache
+this.addEventListener("fetch", event => {
+  event.respondWith(
+    caches.match(event.request)
+      .then(response => {
+        return response || fetch(event.request);
+      })
+      .catch(() => {
+        return caches.match('/offline/index.html');
+      })
+  )
 });
