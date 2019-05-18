@@ -10,6 +10,7 @@ color: '#EB7728'
 tags: ['design', 'matemática']
 categories:
 twitter_text:
+author-post: "Fabrício Ziliotti"
 introduction: 'Proporção da matemática muito famosa presente em logomarcas, pinturas, esculturas e até mesmo na natureza.'
 ---
 

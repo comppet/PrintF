@@ -10,6 +10,7 @@ color:
 tags: ['dev','banco de dados']
 categories:
 twitter_text:
+author-post: "Fabrício Ziliotti"
 introduction: "Conheça o banco de dados dos navegadores, utilizando javascript!!"
 ---
 
