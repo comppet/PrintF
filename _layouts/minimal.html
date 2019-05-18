@@ -3,18 +3,21 @@ layout: compress
 ---
 
 <!DOCTYPE html>
-<html lang="pt-br" itemscope itemtype="http://schema.org/WebPage" {% if page.main-class %}class="post-{{ page.main-class }}"{% endif %}>
-    {% include head.html %}
-    <body>
-        {% include svg-icons.html %}
-        {% include header-post.html %}
-        <section class="post">
+<html lang="pt-br" itemscope itemtype="http://schema.org/WebPage"
+    {% if page.main-class %}class="post-{{ page.main-class }}" {% endif %}>
+{% include head.html %}
 
-            <article id="post" class="post-content" role="main" itemprop="mainContentOfPage">
-                {{ content }}
-            </article>
+<body style="  background: #a0a0a0">
+    {% include svg-icons.html %}
+    {% include header-post.html %}
+    <section class="post">
 
-            {% include footer.html %}
-        </section>
-    </body>
+        <article id="post" class="post-content" role="main" itemprop="mainContentOfPage">
+            {{ content }}
+        </article>
+
+        {% include footer.html %}
+    </section>
+</body>
+
 </html>

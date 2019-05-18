@@ -2,26 +2,25 @@
 title: PrintF - CompPET blog
 description: CompPET blog to share ideas about computer science and its ecosystem.
 
-# baseurl: "" 
-# url: "" 
+baseurl: ""
+url: ""
 
-baseurl: "/PrintF" 
-url: "https://comppet.github.io" 
+# baseurl: "/PrintF"
+# url: "https://comppet.github.io"
 
 # User settings
 username: PrintF
 user_description: CompPET blog
 email: comppet@gmail.com
 twitter_username: lorem_ipsum
-github_username:  comppet
-gplus_username:  lorem_ipsum
+github_username: comppet
+gplus_username: lorem_ipsum
 disqus_username: comppetufu
 
 # Build settings
 markdown: kramdown
 highlighter: rouge
 permalink: /:title/
-
 
 # html minify
 compress_html:
@@ -30,31 +29,24 @@ compress_html:
   endings: []
   profile: false
 
-
 files_to_cache:
- - '/assets/js/main.js'
+  - "/assets/js/main.js"
 
 pages_to_cache:
-  - '/cursos/'
-  - '/series/'
-  - '/about/'
-  - '/tags/'
-  - '/offline/index.html'
-
+  - "/cursos/"
+  - "/about/"
+  - "/tags/"
+  - "/offline/index.html"
 
 # Links to include in menu navigation
 # For external links add external: true
 links:
   - title: Home
     url: /
-  - title: Series
-    url: /series
   - title: Tags
     url: /tags
   - title: Sobre mim
     url: /about
 
-
-
 # exclude my node related stuff
-exclude: ['package.json', 'src', 'node_modules']
+exclude: ["package.json", "src", "node_modules"]
