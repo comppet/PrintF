@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: PrintF | IndexedDB
+title: IndexedDB
 date: 2019-02-04T04:00:00.000+00:00
 image: "/assets/img/"
 description: O banco de dados transacional dos navegadores.
