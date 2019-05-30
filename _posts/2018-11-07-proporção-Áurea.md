@@ -1,19 +1,23 @@
 ---
 layout: post
 comments: true
-title: "Proporção Áurea"
-date: 2018-11-07 21:52:20
-image: '/BlogFziliotti/assets/img/'
-description: 'Proporção da matemática muito famosa presente em logomarcas, pinturas, esculturas e até mesmo na natureza.'
-main-class: 'dsgn'
-color: '#EB7728'
-tags: ['design', 'matemática']
-categories:
-twitter_text:
-author-post: "Fabrício Ziliotti"
-introduction: 'Proporção da matemática muito famosa presente em logomarcas, pinturas, esculturas e até mesmo na natureza.'
----
+title: Proporção Áurea
+date: 2018-11-07T21:52:20.000+00:00
+image: "/PrintF/assets/img/"
+description: Proporção da matemática muito famosa presente em logomarcas, pinturas,
+  esculturas e até mesmo na natureza.
+main-class: dsgn
+color: "#EB7728"
+tags:
+- design
+- matemática
+categories: 
+twitter_text: 
+author-post: Fabrício Ziliotti
+introduction: Proporção da matemática muito famosa presente em logomarcas, pinturas,
+  esculturas e até mesmo na natureza.
 
+---
 ## Motivação
 
 Resolvi criar um post sobre esse tema que venho pesquisando a alguns dias e achei muito interessante compartilhar. Após assistir [Arthur Benjamin: A magia dos números de Fibonacci](https://www.youtube.com/watch?v=SjSHVDfXHQ4), fiquei com vontade de postar algo sobre a proporção aqui no blog.
