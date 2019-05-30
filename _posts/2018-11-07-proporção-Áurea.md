@@ -21,9 +21,9 @@ introduction: Proporção da matemática muito famosa presente em logomarcas, pi
 ## Motivação
 
 Resolvi criar um post sobre esse tema que venho pesquisando a alguns dias e achei muito interessante compartilhar. Após assistir [Arthur Benjamin: A magia dos números de Fibonacci](https://www.youtube.com/watch?v=SjSHVDfXHQ4), fiquei com vontade de postar algo sobre a proporção aqui no blog.
- 
 
 ## Introdução
+
 Proporção áurea, número de ouro, número áureo, secção áurea, proporção de ouro é uma constante real algébrica irracional denotada pela letra grega phi (ϕ), em homenagem ao escultor Phideas.
 Ela é considerada a mais agradável proporção entre duas medidas e foi descoberta pelo matemático Euclides há 2.300 anos, na Grécia Antiga.
 
@@ -34,8 +34,8 @@ Para se chegar nesse valor de **1.618033987**, basta fazer um simples cálculo d
 ![alt](/PrintF/assets/img/design/calculoPropAurea.jpg)
 
 Os gregos antigos a designavam como:
-> “A divisão de um segmento em média e extrema razão” 
-  
+
+> “A divisão de um segmento em média e extrema razão”
 
 ## Relação com Fibonacci
 
@@ -47,6 +47,7 @@ A sequência é:
 Na qual, com exceção dos dois primeiros números, qualquer número que você escolher será o resultado da soma dos dois números anteriores da sequencia.
 
 #### Mas onde está a razão áurea?
+
 Em 1753, o escocês Robert Simson descobriu que a razão entre dois
 termos sucessivos quaisquer dessa sequência tende a ϕ como limite, à medida que se avança mais e mais ao longo da seqüência, por exemplo:
 
@@ -75,7 +76,6 @@ Já ficou convencido? Pode ir testando com os próximos números da sequência h
 Uma representação mais visual:
 ![alt](/PrintF/assets/img/design/propAurea18.jpg)
 
-
 ## Presença na Natureza
 
 ![alt](/PrintF/assets/img/design/propAurea01.jpg)
@@ -86,7 +86,6 @@ Uma representação mais visual:
 ![alt](/PrintF/assets/img/design/propAurea06.jpg)
 ![alt](/PrintF/assets/img/design/propAurea07.jpg)
 
-
 ## Presença em logomarcas
 
 ![alt](/PrintF/assets/img/design/propAurea10.jpg)
@@ -94,13 +93,13 @@ Uma representação mais visual:
 ![alt](/PrintF/assets/img/design/propAurea12.jpg)
 ![alt](/PrintF/assets/img/design/propAurea15.png)
 
-
 ## Outros Exemplos
+
 Triangulo de Pascal:
 ![Triangulo de Pascal](/PrintF/assets/img/design/propAurea17.png)
 Proporção áurea em uma mão:
 ![alt](/PrintF/assets/img/design/propAurea19.jpg)
-Homem Vitruviano: 
+Homem Vitruviano:
 ![alt](/PrintF/assets/img/design/propAurea20.png)
 
 A proporção áurea também era usada como um guia na obra de artistas como Salvador Dalí e de arquitetos como Le Corbusier.
