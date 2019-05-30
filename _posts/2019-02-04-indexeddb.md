@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: IndexedDB
-date: 2019-02-04T04:00:00.000+00:00
+date: 2019-05-29 13:00:00 +0000
 image: "/assets/img/"
 description: O banco de dados transacional dos navegadores.
 main-class: dev
