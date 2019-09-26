@@ -20,7 +20,7 @@ introduction: Proporção da matemática muito famosa presente em logomarcas, pi
 ---
 ## Motivação
 
-Resolvi criar um post sobre esse tema que venho pesquisando a alguns dias e achei muito interessante compartilhar. Após assistir [Arthur Benjamin: A magia dos números de Fibonacci](https://www.youtube.com/watch?v=SjSHVDfXHQ4), fiquei com vontade de postar algo sobre a proporção aqui no blog.
+Resolvi criar um post sobre esse tema que venho pesquisando a alguns dias e achei interessante compartilhar. Após assistir [Arthur Benjamin: A magia dos números de Fibonacci](https://www.youtube.com/watch?v=SjSHVDfXHQ4) foi a gota d'água..
 
 ## Introdução
 
