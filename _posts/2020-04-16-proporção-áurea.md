@@ -108,14 +108,8 @@ introduction: Melhore a experiência do usuário e aumente as taxas de conversã
 
 # Bônus
 
-Uma dica interessante é o estudo dos [Web Browsers](https://www.mozilla.org/en-US/firefox/browsers/what-is-a-browser/ "O que é um browser"). Pois entendendo como ele funciona e suas principais etapas de [construção, layout e gravação da árvore de renderização](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-tree-construction?hl=pt-br "Construção, layout e gravação da árvore de renderização"). 
+Uma dica interessante é o estudo dos [Web Browsers](https://www.mozilla.org/en-US/firefox/browsers/what-is-a-browser/ "O que é um browser"). Pois entendendo como ele funciona e suas principais etapas de [construção, layout e gravação da árvore de renderização](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-tree-construction?hl=pt-br "Construção, layout e gravação da árvore de renderização").
 
 # Conclusão
 
-Existem muitas outras técnicas e elas variam de acordo com a stack que você utilizou no desenvolvimento da aplicação, mas em geral essas dicas se aplicam a maioria de projetos.
-
-Além disso, uma boa prática é utilizar auditadores como:
-
-* [LightHouse](https://developers.google.com/web/tools/lighthouse "Lighthouse")
-* [GTMetrix](http://gtmetrix.com/ "GtMetrix")
-* [Google Page Speed Insights](https://developers.google.com/speed/pagespeed/insights/ "Speed Insights")
+Existem muitas outras técnicas e elas variam de acordo com a stack que você utilizou no desenvolvimento da aplicação, mas em geral essas dicas se aplicam a maioria de projetos. 
