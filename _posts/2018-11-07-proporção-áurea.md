@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: 'Folding@home para mapear proteínas do coronavírus '
-date: 2018-11-07T21:52:20.000+00:00
+date: 2020-04-17 22:52:20 +0000
 image: "/PrintF/assets/img/"
 description: Permanecer em casa não é a única maneira de combater o coronavírus. Aderir
   ao projeto, folding@home, pode ajudar na busca por uma cura para a nova doença.
