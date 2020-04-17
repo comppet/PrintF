@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: Dicas para melhorar a performance de seu siite ou aplicação web.
-date: 2020-04-16 03:00:00 +0000
+date: 2020-04-16T03:00:00.000+00:00
 image: "/PrintF/assets/img/"
 description: Melhore a experiência do usuário e aumente as taxas de conversão do seu
   site através dessas simples dicas.
@@ -13,8 +13,8 @@ tags:
 categories: 
 twitter_text: 
 author-post: Fabrício Ziliotti
-introduction: Proporção da matemática muito famosa presente em logomarcas, pinturas,
-  esculturas e até mesmo na natureza.
+introduction: Melhore a experiência do usuário e aumente as taxas de conversão do
+  seu site através dessas simples dicas.
 
 ---
 # Introdução
