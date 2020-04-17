@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: Dicas para melhorar a performance dos sites.
+title: Dicas para melhorar a performance de seu siite ou aplicação web.
 date: 2020-04-16 03:00:00 +0000
 image: "/PrintF/assets/img/"
 description: Melhore a experiência do usuário e aumente as taxas de conversão do seu
