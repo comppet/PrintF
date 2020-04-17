@@ -1,0 +1,99 @@
+I"=<h2 id="motivação">Motivação</h2>
+
+<p>Resolvi criar um post sobre esse tema que venho pesquisando a alguns dias e achei interessante compartilhar. Após assistir <a href="https://www.youtube.com/watch?v=SjSHVDfXHQ4">Arthur Benjamin: A magia dos números de Fibonacci</a> foi a gota d’água..</p>
+
+<h2 id="introdução">Introdução</h2>
+
+<p>Proporção áurea, número de ouro, número áureo, secção áurea, proporção de ouro é uma constante real algébrica irracional denotada pela letra grega phi (ϕ), em homenagem ao escultor Phideas.
+Ela é considerada a mais agradável proporção entre duas medidas e foi descoberta pelo matemático Euclides há 2.300 anos, na Grécia Antiga.</p>
+
+<p><img src="/PrintF/assets/img/design/propAurea.png" alt="alt" /></p>
+
+<p>Para se chegar nesse valor de <strong>1.618033987</strong>, basta fazer um simples cálculo de proporção. Como o da figura abaixo encontrada no pinterest:</p>
+
+<p><img src="/PrintF/assets/img/design/calculoPropAurea.jpg" alt="alt" /></p>
+
+<p>Os gregos antigos a designavam como:</p>
+
+<blockquote>
+  <p>“A divisão de um segmento em média e extrema razão”</p>
+</blockquote>
+
+<h2 id="relação-com-fibonacci">Relação com Fibonacci</h2>
+
+<p>A proporção áurea pode ser encontrada na sequencia numérica de <strong>Fibonacci</strong>, por exemplo:</p>
+
+<p>A sequência é:
+<strong>1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610..</strong></p>
+
+<p>Na qual, com exceção dos dois primeiros números, qualquer número que você escolher será o resultado da soma dos dois números anteriores da sequencia.</p>
+
+<h4 id="mas-onde-está-a-razão-áurea">Mas onde está a razão áurea?</h4>
+
+<p>Em 1753, o escocês Robert Simson descobriu que a razão entre dois
+termos sucessivos quaisquer dessa sequência tende a ϕ como limite, à medida que se avança mais e mais ao longo da seqüência, por exemplo:</p>
+
+<p><strong>1 ÷ 1 = 1,0000</strong></p>
+
+<p><strong>1 ÷ 2 = 0,5000</strong></p>
+
+<p><strong>2 ÷ 3 = 0,6666</strong></p>
+
+<p><strong>3 ÷ 5 = 0,6000</strong></p>
+
+<p><strong>5 ÷ 8 = 0,6250</strong></p>
+
+<p><strong>8 ÷ 13 = 0,6153</strong></p>
+
+<p><strong>13 ÷ 21 = 0,6190</strong></p>
+
+<p><strong>21 ÷ 34 = 0,6176</strong></p>
+
+<p><strong>34 ÷ 55 = 0,6176</strong></p>
+
+<p><strong>55 ÷ 89 = 0,6180</strong></p>
+
+<p>Já ficou convencido? Pode ir testando com os próximos números da sequência haha</p>
+
+<p>Uma representação mais visual:
+<img src="/PrintF/assets/img/design/propAurea18.jpg" alt="alt" /></p>
+
+<h2 id="presença-na-natureza">Presença na Natureza</h2>
+
+<p><img src="/PrintF/assets/img/design/propAurea01.jpg" alt="alt" />
+<img src="/PrintF/assets/img/design/propAurea02.jpg" alt="alt" />
+<img src="/PrintF/assets/img/design/propAurea03.jpg" alt="alt" />
+<img src="/PrintF/assets/img/design/propAurea04.jpg" alt="alt" />
+<img src="/PrintF/assets/img/design/propAurea05.jpg" alt="alt" />
+<img src="/PrintF/assets/img/design/propAurea06.jpg" alt="alt" />
+<img src="/PrintF/assets/img/design/propAurea07.jpg" alt="alt" /></p>
+
+<h2 id="presença-em-logomarcas">Presença em logomarcas</h2>
+
+<p><img src="/PrintF/assets/img/design/propAurea10.jpg" alt="alt" />
+<img src="/PrintF/assets/img/design/propAurea11.jpg" alt="alt" />
+<img src="/PrintF/assets/img/design/propAurea12.jpg" alt="alt" />
+<img src="/PrintF/assets/img/design/propAurea15.png" alt="alt" /></p>
+
+<h2 id="outros-exemplos">Outros Exemplos</h2>
+
+<p>Triangulo de Pascal:
+<img src="/PrintF/assets/img/design/propAurea17.png" alt="Triangulo de Pascal" />
+Proporção áurea em uma mão:
+<img src="/PrintF/assets/img/design/propAurea19.jpg" alt="alt" />
+Homem Vitruviano:
+<img src="/PrintF/assets/img/design/propAurea20.png" alt="alt" /></p>
+
+<p>A proporção áurea também era usada como um guia na obra de artistas como Salvador Dalí e de arquitetos como Le Corbusier.
+<img src="/PrintF/assets/img/design/propAurea20.jpg" alt="alt" /></p>
+
+<h2 id="referências">Referências</h2>
+
+<p><a href="http://www.redalyc.org/pdf/810/81000304.pdf">Artigo de Mendias Lauro, Maira - A razão áurea e os padrões harmônicos na natureza, artes e arquitetura</a></p>
+
+<p><a href="http://projetos.unioeste.br/cursos/cascavel/matematica/xxiisam/artigos/20.pdf">Artigo de Patricia Camara Martins - O Número de Ouro e a Divina Proporção </a></p>
+
+<p><a href="http://www.uel.br/projetos/matessencial/superior/pde/rosania-razao-aurea.pdf">Trabalho de Rosania Maria Queiroz - RAZÃO ÁUREA: A BELEZA DE UMA RAZÃO SURPREENDENTE  </a></p>
+
+<p><a href="https://gizmodo.uol.com.br/mitos-proporcao-aurea/">Publicação de Felipe Ventura no gizmodo - Os mitos e verdades sobre a proporção áurea</a></p>
+:ET

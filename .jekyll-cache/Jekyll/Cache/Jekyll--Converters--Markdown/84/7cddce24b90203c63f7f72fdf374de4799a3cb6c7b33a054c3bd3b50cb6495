@@ -1,0 +1,128 @@
+I"�9<h1 id="introdução">Introdução</h1>
+
+<p>Estava estudando Javascript nesses últimos dias e acabei me deparando com o Indexed DB. Achei interessante e resolvi compartilhar um pouco do que aprendi com vocês 😃</p>
+
+<h1 id="o-que-é">O que é?</h1>
+
+<p>Bom para responder essa pergunta, abaixo vou listar algumas definições que encontrei em sites como MDN, Wikipedia e outros.</p>
+
+<blockquote>
+  <p>IndexedDB é uma API para armazenamento client-side de quantidades significantes de informações e buscas com alta performance por índices. Enquanto DOM Storage é útil para armazenamento de pequenas quantidade de dados, IndexedDB é a solução para grande porção de dados estruturados.</p>
+</blockquote>
+
+<blockquote>
+  <p>IndexedDB é um sistema de tabela indexada.</p>
+</blockquote>
+
+<blockquote>
+  <p>O IndexedDB permite armazenar e recuperar objetos indexados com uma “chave”. Todas as alterações feitas no banco de dados ocorrem dentro de transações.</p>
+</blockquote>
+
+<p>Resumindo: O indexedDB é um banco de dados dos navegadores que você utiliza acessando o <strong>window.indexedDB</strong>. Com javascript você consegue armazenar grandes quantidades de dados de uma maneira mais organizada.</p>
+
+<h1 id="exemplos-de-código-comentados">Exemplos de código comentados:</h1>
+
+<p>Primeiro vamos supor que temos a seguinte classe em nosso projeto:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">required</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="dl">"</span><span class="s2">Atributo não foi informado.</span><span class="dl">"</span><span class="p">);</span>
+
+<span class="kd">class</span> <span class="nx">Produto</span> <span class="p">{</span>
+  <span class="kd">constructor</span><span class="p">(</span><span class="nx">nome</span> <span class="o">=</span> <span class="nx">required</span><span class="p">(),</span> <span class="nx">quantidade</span> <span class="o">=</span> <span class="nx">required</span><span class="p">(),</span> <span class="nx">valor</span> <span class="o">=</span> <span class="nx">required</span><span class="p">())</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">_nome</span> <span class="o">=</span> <span class="nx">nome</span><span class="p">;</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">_quantidade</span> <span class="o">=</span> <span class="nx">quantidade</span><span class="p">;</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">_valor</span> <span class="o">=</span> <span class="nx">valor</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>O código de criação do indexedDB do ObjectStorage produtos fica assim:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//check for support</span>
+<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="dl">"</span><span class="s2">indexedDB</span><span class="dl">"</span> <span class="k">in</span> <span class="nb">window</span><span class="p">))</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">This browser doesn't support IndexedDB</span><span class="dl">"</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kd">var</span> <span class="nx">connection</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">openRequest</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">indexedDB</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="dl">"</span><span class="s2">produtos</span><span class="dl">"</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span> <span class="c1">// 3 é a versao atual</span>
+
+<span class="c1">//Tríade de eventos disparados quando requisitamos uma abertura de conexão com o banco:</span>
+<span class="c1">//1</span>
+<span class="nx">openRequest</span><span class="p">.</span><span class="nx">onupgradeneeded</span> <span class="o">=</span> <span class="nx">e</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">var</span> <span class="nx">minhaConnection</span> <span class="o">=</span> <span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">result</span><span class="p">;</span>
+
+  <span class="k">if</span> <span class="p">(</span><span class="nx">minhaConnection</span><span class="p">.</span><span class="nx">objectStoreNames</span><span class="p">.</span><span class="nx">contains</span><span class="p">(</span><span class="dl">"</span><span class="s2">produtos</span><span class="dl">"</span><span class="p">))</span>
+    <span class="nx">minhaConnection</span><span class="p">.</span><span class="nx">deleteObjectStore</span><span class="p">(</span><span class="dl">"</span><span class="s2">produtos</span><span class="dl">"</span><span class="p">);</span>
+ 
+  <span class="nx">minhaConnection</span><span class="p">.</span><span class="nx">createObjectStore</span><span class="p">(</span><span class="dl">"</span><span class="s2">produtos</span><span class="dl">"</span><span class="p">,</span> <span class="p">{</span> <span class="na">autoIncrement</span><span class="p">:</span> <span class="kc">true</span> <span class="p">});</span>
+<span class="p">};</span>
+
+<span class="c1">//2</span>
+<span class="nx">openRequest</span><span class="p">.</span><span class="nx">onsuccess</span> <span class="o">=</span> <span class="nx">e</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="nx">connection</span> <span class="o">=</span> <span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">result</span><span class="p">;</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Conexão com banco realizada com sucesso! com o IDBDatabase: </span><span class="dl">"</span> <span class="o">+</span> <span class="nx">connection</span><span class="p">);</span>
+<span class="p">};</span>
+
+<span class="c1">//3</span>
+<span class="nx">openRequest</span><span class="p">.</span><span class="nx">onerror</span> <span class="o">=</span> <span class="nx">e</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">error</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Exemplos de funções de inserção e listagem das informações do banco criado:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">adicionaProduto</span> <span class="o">=</span> <span class="p">(</span><span class="nx">nome</span><span class="p">,</span> <span class="nx">quantidade</span><span class="p">,</span> <span class="nx">valorUnitario</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">transaction</span> <span class="o">=</span> <span class="nx">connection</span><span class="p">.</span><span class="nx">transaction</span><span class="p">([</span><span class="dl">"</span><span class="s2">produtos</span><span class="dl">"</span><span class="p">],</span> <span class="dl">"</span><span class="s2">readwrite</span><span class="dl">"</span><span class="p">);</span>
+  <span class="kd">let</span> <span class="nx">store</span> <span class="o">=</span> <span class="nx">transaction</span><span class="p">.</span><span class="nx">objectStore</span><span class="p">(</span><span class="dl">"</span><span class="s2">produtos</span><span class="dl">"</span><span class="p">);</span>
+
+  <span class="kd">let</span> <span class="nx">produto</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Produto</span><span class="p">(</span><span class="nx">nome</span><span class="p">,</span> <span class="nx">quantidade</span><span class="p">,</span> <span class="nx">valorUnitario</span><span class="p">);</span>
+  <span class="kd">let</span> <span class="nx">request</span> <span class="o">=</span> <span class="nx">store</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">produto</span><span class="p">);</span>
+
+  <span class="nx">request</span><span class="p">.</span><span class="nx">onsuccess</span> <span class="o">=</span> <span class="nx">e</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Produto incluida com sucesso</span><span class="dl">"</span><span class="p">);</span>
+  <span class="nx">request</span><span class="p">.</span><span class="nx">onerror</span> <span class="o">=</span> <span class="nx">e</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Não foi possível incluir o produto</span><span class="dl">"</span><span class="p">);</span>
+<span class="p">};</span>
+
+<span class="kd">var</span> <span class="nx">listaTodos</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">transaction</span> <span class="o">=</span> <span class="nx">connection</span><span class="p">.</span><span class="nx">transaction</span><span class="p">([</span><span class="dl">"</span><span class="s2">produtos</span><span class="dl">"</span><span class="p">],</span> <span class="dl">"</span><span class="s2">readwrite</span><span class="dl">"</span><span class="p">);</span>
+  <span class="kd">let</span> <span class="nx">store</span> <span class="o">=</span> <span class="nx">transaction</span><span class="p">.</span><span class="nx">objectStore</span><span class="p">(</span><span class="dl">"</span><span class="s2">produtos</span><span class="dl">"</span><span class="p">);</span>
+  <span class="kd">let</span> <span class="nx">cursor</span> <span class="o">=</span> <span class="nx">store</span><span class="p">.</span><span class="nx">openCursor</span><span class="p">();</span>
+  <span class="kd">let</span> <span class="nx">produtos</span> <span class="o">=</span> <span class="p">[];</span>
+
+  <span class="nx">cursor</span><span class="p">.</span><span class="nx">onsuccess</span> <span class="o">=</span> <span class="nx">e</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="kd">let</span> <span class="nx">atual</span> <span class="o">=</span> <span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">result</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">atual</span><span class="p">)</span> <span class="p">{</span>
+      <span class="kd">let</span> <span class="nx">dado</span> <span class="o">=</span> <span class="nx">atual</span><span class="p">.</span><span class="nx">value</span><span class="p">;</span>
+      <span class="nx">produtos</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="k">new</span> <span class="nx">Produto</span><span class="p">(</span><span class="nx">dado</span><span class="p">.</span><span class="nx">_nome</span><span class="p">,</span> <span class="nx">dado</span><span class="p">.</span><span class="nx">_quantidade</span><span class="p">,</span> <span class="nx">dado</span><span class="p">.</span><span class="nx">_valor</span><span class="p">));</span>
+      <span class="nx">atual</span><span class="p">.</span><span class="k">continue</span><span class="p">();</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Terminou de listar os produtos:</span><span class="dl">"</span> <span class="o">+</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">produtos</span><span class="p">));</span>
+    <span class="p">}</span>
+  <span class="p">};</span>
+
+  <span class="nx">cursor</span><span class="p">.</span><span class="nx">onerror</span> <span class="o">=</span> <span class="nx">e</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">error</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<h1 id="conclusão">Conclusão</h1>
+
+<p>Sem dúvidas o IndexedDB é uma API muito interessante e legal de aprender. Além disso, vem sendo atualizada constantemente pelos desenvolvedores da Google e ao redor do mundo. Abaixo segue links interessantes para aprofundar no assunto:</p>
+
+<blockquote>
+  <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Basic_Concepts_Behind_IndexedDB">Teoria sobre IndexedDB feita pela MDN</a></p>
+</blockquote>
+
+<blockquote>
+  <p><a href="https://developers.google.com/web/ilt/pwa/working-with-indexeddb">Tutorial completo da Google</a></p>
+</blockquote>
+
+<blockquote>
+  <p><a href="https://www.npmjs.com/package/idb">IndexedDB usando Promises, facilita muito!!</a></p>
+</blockquote>
+
+<blockquote>
+  <p><a href="https://dexie.org/">Biblioteca Dexie.js</a></p>
+</blockquote>
+
+<blockquote>
+  <p><a href="http://aaronpowell.github.io/db.js/">Biblioteca Db.js</a></p>
+</blockquote>
+
+<p>Enfim, a minha ideia foi mostrar o código e funcionamento do IndexedDB na prática, mas é claro que o código procedural não é a melhor solução, podemos por exemplo definir as regras em uma FactoryDB em nosso projeto, e deixar mais organizado e legível.</p>
+:ET
