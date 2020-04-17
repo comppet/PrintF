@@ -17,8 +17,7 @@ introduction: Permanecer em casa não é a única maneira de combater o coronav�
   Aderir ao projeto, folding@home, pode ajudar na busca por uma cura para a nova doença.
 
 ---
-# Folding@home para mapear proteínas do coronavírus 
-
+# Introdução
 
 Permanecer em casa não é a única maneira de combater o coronavírus. Aderir ao projeto, folding@home, pode ajudar na busca por uma cura para a nova doença. Milhares de voluntários doaram poder computacional para criar uma rede distribuída de computadores rodando simulações das proteínas do novo vírus.
 
@@ -27,6 +26,5 @@ Os vírus usam proteínas para invadir as células humanas. Visto isso, o objeti
 Tal processo já foi utilizado em outros vírus com sucesso, como por exemplo, o vírus Ebola. No qual, foi descoberta uma vulnerabilidade em que ao inserir um determinado tipo de molécula o vírus perde suas funções.
 
 Folding@home não é o único poder computacional investido no projeto. Várias instituições e empresas têm oferecido suas capacidades computacionais para executar as simulações, como por exemplo, universidades, agências governamentais, a NASA, IBM e Microsoft.
-
 
 Fonte: https://www.sciencenews.org/article/coronavirus-covid-19-proteins-super-computer-fight-pandemic
