@@ -8,7 +8,8 @@ description: Permanecer em casa não é a única maneira de combater o coronaví
   ao projeto, folding@home, pode ajudar na busca por uma cura para a nova doença.
 main-class: dsgn
 color: "#EB7728"
-tags: []
+tags:
+- comp
 categories: 
 twitter_text: 
 author-post: Felipe Augusto
