@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: 'Folding@home para mapear proteínas do coronavírus '
-date: 2020-04-17 22:52:20 +0000
+date: 2020-04-17T22:52:20.000+00:00
 image: "/PrintF/assets/img/"
 description: Permanecer em casa não é a única maneira de combater o coronavírus. Aderir
   ao projeto, folding@home, pode ajudar na busca por uma cura para a nova doença.
@@ -27,4 +27,4 @@ Tal processo já foi utilizado em outros vírus com sucesso, como por exemplo, o
 
 Folding@home não é o único poder computacional investido no projeto. Várias instituições e empresas têm oferecido suas capacidades computacionais para executar as simulações, como por exemplo, universidades, agências governamentais, a NASA, IBM e Microsoft.
 
-Fonte: https://www.sciencenews.org/article/coronavirus-covid-19-proteins-super-computer-fight-pandemic
+Fonte: [https://www.sciencenews.org/article/coronavirus-covid-19-proteins-super-computer-fight-pandemic](https://www.sciencenews.org/article/coronavirus-covid-19-proteins-super-computer-fight-pandemic "Fonte do post")
