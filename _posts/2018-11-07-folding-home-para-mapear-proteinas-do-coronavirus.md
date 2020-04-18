@@ -27,4 +27,4 @@ Tal processo já foi utilizado em outros vírus com sucesso, como por exemplo, o
 
 Folding@home não é o único poder computacional investido no projeto. Várias instituições e empresas têm oferecido suas capacidades computacionais para executar as simulações, como por exemplo, universidades, agências governamentais, a NASA, IBM e Microsoft.
 
-Fonte: [https://www.sciencenews.org/article/coronavirus-covid-19-proteins-super-computer-fight-pandemic](https://www.sciencenews.org/article/coronavirus-covid-19-proteins-super-computer-fight-pandemic "Fonte do post")
+Fonte:  [You can help fight the coronavirus. All you need is a computer](https://www.sciencenews.org/article/coronavirus-covid-19-proteins-super-computer-fight-pandemic "fonte")
