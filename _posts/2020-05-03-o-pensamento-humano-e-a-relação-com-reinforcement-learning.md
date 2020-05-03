@@ -3,14 +3,14 @@ layout: post
 comments: true
 date: 2020-05-03 08:43:48 -0300
 author-post: Laís Deghaide
-title: O Pensamento Humano e a relação com Reinforcement learning
+title: O Pensamento Humano e a relação com Reinforcement Learning
 image: "/PrintF/assets/img/"
 description: Conheça o funcionamento do Reinforcement learning, uma área de Machine
   Learning, que possui maior semelhança com os métodos que humanos.
 introduction: Conheça o funcionamento do Reinforcement learning, uma área de Machine
   Learning, que possui maior semelhança com os métodos que humanos.
 main-class: ML
-color: ''
+color: "#EB7728"
 tags:
 - ML
 categories: ML
