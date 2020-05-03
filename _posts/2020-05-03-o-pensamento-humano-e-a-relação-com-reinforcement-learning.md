@@ -13,7 +13,7 @@ main-class: ML
 color: "#EB7728"
 tags:
 - ML
-categories: ''
+categories: ML
 twitter_text: ''
 
 ---
@@ -38,7 +38,7 @@ Tente determinar, rapidamente, se o argumento é logicamente válido:
 
 A grande maioria, pensando rapidamente, toma a conclusão acima como válida, mas na verdade o argumento é falho, pois algumas rosas podem não estar no grupo das flores que murcham rápido. E, analisando cuidadosamente, se necessário fazendo uma tabela verdade, chegamos na resposta correta.
 
-![](https://lh5.googleusercontent.com/uHEwnY4Kz2Jcfc_TAc24RHTU-bywjsIuysjw2KY6Y8EICDZmo5USkhHF77DIsQGaeaD1VXABgFE8FYAhHnXeIgaJ0724m17QujV5qIPj5-ThBeMKnWNV8kDPPEJsexo9ObPp7zdr =419x368)
+![](/PrintF/assets/img/downloads/s1e2.jpg)
 
 # Comparando com Deep Reinforcement Learning
 
@@ -52,16 +52,15 @@ Comparando os sistemas de pensamento humanos com algoritmos de Deep Reinforcemen
 
 A primeira versão do jogo Alpha Go, criado pela DeepMind, é um ótimo exemplo de Deep Reinforcement Learning, e se assemelha ao nosso _S1:_ ele (**agente**) aprende e decide as melhores jogadas rapidamente, mas possui tendências, já que o **agente RL** imita os movimentos de um expert e, somente, após essa fase inicial ele começa a aprender um jogo potencialmente mais poderoso.
 
-![](https://lh3.googleusercontent.com/edNaQROR4hVpbPlSncsOv1jvSLdU5rr2cdColQu0gTvNz1lOf5JeTCUVchH9gZHV6kloKEVocdNW5sNplX_9HqxfdiUAouIZ04Y2P-xJm8UpHOmP0qJW6RTjKzNbLut2SHMNgnKk =434x333)
+![](/PrintF/assets/img/downloads/alphago.png)
 
-  
 Mas o potencial computacional vem avançando e algoritmos foram e estão sendo criados para não depender da atividade humana para serem treinados. O Expert Interaction (ExIt) - um novo algoritmo de Reinforcement Learning - utiliza árvore de busca, que auxilia o treinamento da rede neural, análogo com o que acontece com o nosso _Sistema 2,_ e por sua vez a rede neural melhora o desempenho da árvore de busca, fornecendo intuições rápidas para orientar a busca.
 
 O Alpha Go Zero utiliza essa nova técnica de aprendizado, na qual ele se torna seu próprio professor. O sistema começa com uma rede neural que não sabe nada sobre o jogo Go. Em seguida, ele joga contra si mesmo, combinando essa rede neural com um poderoso algoritmo de busca. Enquanto joga, a rede neural é ajustada e atualizada para prever jogadas.
 
-![](https://lh6.googleusercontent.com/hcPjoJEVQd1PPysY9eYdqpnz9krxLejUBR_PRMc0Lht3-YbVm1W7d4F9XCnHhfOgfBXslAp9oeGaesFCJfsXLONCngJ6JPmKUFTt6GcAUfdEXNp8qtoNHShdYmJEFXboAEmABgWL =602x329)
+![](/PrintF/assets/img/downloads/go.gif)
 
-# Referências 
+# Referências
 
 [https://dl.acm.org/doi/pdf/10.5555/3295222.3295288](https://dl.acm.org/doi/pdf/10.5555/3295222.3295288 "https://dl.acm.org/doi/pdf/10.5555/3295222.3295288")
 
