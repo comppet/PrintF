@@ -4,22 +4,20 @@ comments: true
 title: Proporção Áurea
 date: 2018-11-07T21:52:20.000+00:00
 image: "/PrintF/assets/img/"
-description:
-  Proporção da matemática muito famosa presente em logomarcas, pinturas,
+description: Proporção da matemática muito famosa presente em logomarcas, pinturas,
   esculturas e até mesmo na natureza.
 main-class: dsgn
 color: "#EB7728"
 tags:
-  - design
-  - matemática
-categories:
-twitter_text:
+- design
+- matemática
+categories: 
+twitter_text: 
 author-post: Fabrício Ziliotti
-introduction:
-  Proporção da matemática muito famosa presente em logomarcas, pinturas,
+introduction: Proporção da matemática muito famosa presente em logomarcas, pinturas,
   esculturas e até mesmo na natureza.
----
 
+---
 ## Motivação
 
 Resolvi criar um post sobre esse tema que venho pesquisando a alguns dias e achei interessante compartilhar. Após assistir [Arthur Benjamin: A magia dos números de Fibonacci](https://www.youtube.com/watch?v=SjSHVDfXHQ4) foi a gota d'água..
@@ -107,8 +105,8 @@ Homem Vitruviano:
 A proporção áurea também era usada como um guia na obra de artistas como Salvador Dalí e de arquitetos como Le Corbusier.
 ![alt](/PrintF/assets/img/downloads/propAurea20.jpg)
 
-Teste2  
-![](PrintF/assets/img/downloads/Screenshot from 2020-04-29 22-54-03.png)
+Teste3  
+![](/PrintF/assets/img/downloads/Screenshot from 2020-04-29 22-54-03.png)
 
 ## Referências
 
