@@ -44,3 +44,5 @@ fields:
 - type: text
   name: twitter_text
   label: twitter_text
+pages:
+- _posts/o-pensamento-humano-e-a-relação-com-reinforcement-learning.md
