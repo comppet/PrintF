@@ -11,7 +11,7 @@ sections:
   label: Posts
   create: all
 upload_dir: PrintF/assets/img/downloads
-public_path: PrintF/assets/img/downloads
+public_path: "/PrintF/assets/img/downloads"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
