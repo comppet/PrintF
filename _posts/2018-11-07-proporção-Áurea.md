@@ -105,8 +105,8 @@ Homem Vitruviano:
 A proporção áurea também era usada como um guia na obra de artistas como Salvador Dalí e de arquitetos como Le Corbusier.
 ![alt](/PrintF/assets/img/downloads/propAurea20.jpg)
 
-Teste3  
-![](/PrintF/assets/img/downloads/Screenshot from 2020-04-29 22-54-03.png)
+Teste4  
+![](/PrintF/assets/img/downloads/ae.png)
 
 ## Referências
 
