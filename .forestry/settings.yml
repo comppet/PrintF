@@ -10,7 +10,7 @@ sections:
 - type: jekyll-posts
   label: Posts
   create: all
-upload_dir: PrintF/assets/img/downloads
+upload_dir: assets/img/downloads
 public_path: "/PrintF/assets/img/downloads"
 front_matter_path: ''
 use_front_matter_path: false
