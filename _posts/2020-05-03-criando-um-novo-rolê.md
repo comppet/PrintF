@@ -7,8 +7,8 @@ title: Criando um novo rolê
 image: ''
 description: Descricaozinha de testes
 introduction: Introducao resumindo o teste
-main-class: ''
-color: ''
+main-class: dsgn
+color: "#EB772"
 tags:
 - dev
 - comp
