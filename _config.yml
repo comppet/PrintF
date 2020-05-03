@@ -5,7 +5,7 @@ description: CompPET blog to share ideas about computer science and its ecosyste
 # baseurl: ""
 # url: ""
 
-baseurl: "/PrintF/"
+baseurl: "/PrintF"
 url: "https://comppet.github.io"
 
 # User settings
