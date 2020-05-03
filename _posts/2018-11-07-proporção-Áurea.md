@@ -4,20 +4,22 @@ comments: true
 title: Proporção Áurea
 date: 2018-11-07T21:52:20.000+00:00
 image: "/PrintF/assets/img/"
-description: Proporção da matemática muito famosa presente em logomarcas, pinturas,
+description:
+  Proporção da matemática muito famosa presente em logomarcas, pinturas,
   esculturas e até mesmo na natureza.
 main-class: dsgn
 color: "#EB7728"
 tags:
-- design
-- matemática
-categories: 
-twitter_text: 
+  - design
+  - matemática
+categories:
+twitter_text:
 author-post: Fabrício Ziliotti
-introduction: Proporção da matemática muito famosa presente em logomarcas, pinturas,
+introduction:
+  Proporção da matemática muito famosa presente em logomarcas, pinturas,
   esculturas e até mesmo na natureza.
-
 ---
+
 ## Motivação
 
 Resolvi criar um post sobre esse tema que venho pesquisando a alguns dias e achei interessante compartilhar. Após assistir [Arthur Benjamin: A magia dos números de Fibonacci](https://www.youtube.com/watch?v=SjSHVDfXHQ4) foi a gota d'água..
@@ -27,11 +29,11 @@ Resolvi criar um post sobre esse tema que venho pesquisando a alguns dias e ache
 Proporção áurea, número de ouro, número áureo, secção áurea, proporção de ouro é uma constante real algébrica irracional denotada pela letra grega phi (ϕ), em homenagem ao escultor Phideas.
 Ela é considerada a mais agradável proporção entre duas medidas e foi descoberta pelo matemático Euclides há 2.300 anos, na Grécia Antiga.
 
-![alt](/PrintF/assets/img/design/propAurea.png)
+![alt](/PrintF/assets/img/downloads/propAurea.png)
 
 Para se chegar nesse valor de **1.618033987**, basta fazer um simples cálculo de proporção. Como o da figura abaixo encontrada no pinterest:
 
-![alt](/PrintF/assets/img/design/calculoPropAurea.jpg)
+![alt](/PrintF/assets/img/downloads/calculoPropAurea.jpg)
 
 Os gregos antigos a designavam como:
 
@@ -74,36 +76,36 @@ termos sucessivos quaisquer dessa sequência tende a ϕ como limite, à medida q
 Já ficou convencido? Pode ir testando com os próximos números da sequência haha
 
 Uma representação mais visual:
-![alt](/PrintF/assets/img/design/propAurea18.jpg)
+![alt](/PrintF/assets/img/downloads/propAurea18.jpg)
 
 ## Presença na Natureza
 
-![alt](/PrintF/assets/img/design/propAurea01.jpg)
-![alt](/PrintF/assets/img/design/propAurea02.jpg)
-![alt](/PrintF/assets/img/design/propAurea03.jpg)
-![alt](/PrintF/assets/img/design/propAurea04.jpg)
-![alt](/PrintF/assets/img/design/propAurea05.jpg)
-![alt](/PrintF/assets/img/design/propAurea06.jpg)
-![alt](/PrintF/assets/img/design/propAurea07.jpg)
+![alt](/PrintF/assets/img/downloads/propAurea01.jpg)
+![alt](/PrintF/assets/img/downloads/propAurea02.jpg)
+![alt](/PrintF/assets/img/downloads/propAurea03.jpg)
+![alt](/PrintF/assets/img/downloads/propAurea04.jpg)
+![alt](/PrintF/assets/img/downloads/propAurea05.jpg)
+![alt](/PrintF/assets/img/downloads/propAurea06.jpg)
+![alt](/PrintF/assets/img/downloads/propAurea07.jpg)
 
 ## Presença em logomarcas
 
-![alt](/PrintF/assets/img/design/propAurea10.jpg)
-![alt](/PrintF/assets/img/design/propAurea11.jpg)
-![alt](/PrintF/assets/img/design/propAurea12.jpg)
-![alt](/PrintF/assets/img/design/propAurea15.png)
+![alt](/PrintF/assets/img/downloads/propAurea10.jpg)
+![alt](/PrintF/assets/img/downloads/propAurea11.jpg)
+![alt](/PrintF/assets/img/downloads/propAurea12.jpg)
+![alt](/PrintF/assets/img/downloads/propAurea15.png)
 
 ## Outros Exemplos
 
 Triangulo de Pascal:
-![Triangulo de Pascal](/PrintF/assets/img/design/propAurea17.png)
+![Triangulo de Pascal](/PrintF/assets/img/downloads/propAurea17.png)
 Proporção áurea em uma mão:
-![alt](/PrintF/assets/img/design/propAurea19.jpg)
+![alt](/PrintF/assets/img/downloads/propAurea19.jpg)
 Homem Vitruviano:
-![alt](/PrintF/assets/img/design/propAurea20.png)
+![alt](/PrintF/assets/img/downloads/propAurea20.png)
 
 A proporção áurea também era usada como um guia na obra de artistas como Salvador Dalí e de arquitetos como Le Corbusier.
-![alt](/PrintF/assets/img/design/propAurea20.jpg)
+![alt](/PrintF/assets/img/downloads/propAurea20.jpg)
 
 Teste2  
 ![](PrintF/assets/img/downloads/Screenshot from 2020-04-29 22-54-03.png)
@@ -114,6 +116,6 @@ Teste2
 
 [Artigo de Patricia Camara Martins - O Número de Ouro e a Divina Proporção ](http://projetos.unioeste.br/cursos/cascavel/matematica/xxiisam/artigos/20.pdf)
 
-[Trabalho de Rosania Maria Queiroz - RAZÃO ÁUREA: A BELEZA DE UMA RAZÃO SURPREENDENTE  ](http://www.uel.br/projetos/matessencial/superior/pde/rosania-razao-aurea.pdf)
+[Trabalho de Rosania Maria Queiroz - RAZÃO ÁUREA: A BELEZA DE UMA RAZÃO SURPREENDENTE ](http://www.uel.br/projetos/matessencial/superior/pde/rosania-razao-aurea.pdf)
 
 [Publicação de Felipe Ventura no gizmodo - Os mitos e verdades sobre a proporção áurea](https://gizmodo.uol.com.br/mitos-proporcao-aurea/)

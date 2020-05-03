@@ -5,8 +5,8 @@ description: CompPET blog to share ideas about computer science and its ecosyste
 # baseurl: ""
 # url: ""
 
-baseurl: "/PrintF"
-url: "https://comppet.github.io"
+baseurl: "PrintF"
+url: "https://comppet.github.io/"
 
 # User settings
 username: PrintF
@@ -29,7 +29,6 @@ compress_html:
   endings: []
   profile: false
 
-
 files_to_cache:
   - "/assets/js/main.js"
   - "/assets/js/blog.js"
@@ -51,15 +50,16 @@ links:
     url: /about
 
 # exclude my node related stuff
-exclude: [
-  'package.json',
-  'src',
-  'node_modules',
-  'vendor/bundle/ruby',
-  'package-lock.json',
-  'Readme.md',
-  'gulpfile.js',
-  'initpost.sh',
-  'testlinks.sh',
-  '.travis.yml'
-]
+exclude:
+  [
+    "package.json",
+    "src",
+    "node_modules",
+    "vendor/bundle/ruby",
+    "package-lock.json",
+    "Readme.md",
+    "gulpfile.js",
+    "initpost.sh",
+    "testlinks.sh",
+    ".travis.yml",
+  ]

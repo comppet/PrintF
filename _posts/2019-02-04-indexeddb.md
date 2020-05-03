@@ -6,16 +6,16 @@ date: 2019-05-29 13:00:00 +0000
 image: "/assets/img/"
 description: O banco de dados transacional dos navegadores.
 main-class: dev
-color: 
+color:
 tags:
-- dev
-- banco de dados
-categories: 
-twitter_text: 
+  - dev
+  - banco de dados
+categories:
+twitter_text:
 author-post: Fabrício Ziliotti
 introduction: Conheça o banco de dados dos navegadores, utilizando javascript!!
-
 ---
+
 # Introdução
 
 Estava estudando Javascript nesses últimos dias e acabei me deparando com o Indexed DB. Achei interessante e resolvi compartilhar um pouco do que aprendi com vocês 😃
@@ -61,23 +61,25 @@ var openRequest = window.indexedDB.open("produtos", 3); // 3 é a versao atual
 
 //Tríade de eventos disparados quando requisitamos uma abertura de conexão com o banco:
 //1
-openRequest.onupgradeneeded = e => {
+openRequest.onupgradeneeded = (e) => {
   var minhaConnection = e.target.result;
 
   if (minhaConnection.objectStoreNames.contains("produtos"))
     minhaConnection.deleteObjectStore("produtos");
- 
+
   minhaConnection.createObjectStore("produtos", { autoIncrement: true });
 };
 
 //2
-openRequest.onsuccess = e => {
+openRequest.onsuccess = (e) => {
   connection = e.target.result;
-  console.log("Conexão com banco realizada com sucesso! com o IDBDatabase: " + connection);
+  console.log(
+    "Conexão com banco realizada com sucesso! com o IDBDatabase: " + connection
+  );
 };
 
 //3
-openRequest.onerror = e => console.log(e.target.error);
+openRequest.onerror = (e) => console.log(e.target.error);
 ```
 
 Exemplos de funções de inserção e listagem das informações do banco criado:
@@ -90,8 +92,8 @@ var adicionaProduto = (nome, quantidade, valorUnitario) => {
   let produto = new Produto(nome, quantidade, valorUnitario);
   let request = store.add(produto);
 
-  request.onsuccess = e => console.log("Produto incluida com sucesso");
-  request.onerror = e => console.log("Não foi possível incluir o produto");
+  request.onsuccess = (e) => console.log("Produto incluida com sucesso");
+  request.onerror = (e) => console.log("Não foi possível incluir o produto");
 };
 
 var listaTodos = () => {
@@ -100,7 +102,7 @@ var listaTodos = () => {
   let cursor = store.openCursor();
   let produtos = [];
 
-  cursor.onsuccess = e => {
+  cursor.onsuccess = (e) => {
     let atual = e.target.result;
     if (atual) {
       let dado = atual.value;
@@ -111,7 +113,7 @@ var listaTodos = () => {
     }
   };
 
-  cursor.onerror = e => console.log(e.target.error.name);
+  cursor.onerror = (e) => console.log(e.target.error.name);
 };
 ```
 
