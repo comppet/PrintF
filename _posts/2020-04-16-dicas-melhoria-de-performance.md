@@ -23,13 +23,15 @@ introduction: Melhore a experiência do usuário e aumente as taxas de conversã
  
 Uma boa estratégia de Font-Loading é não carregar nenhuma fonte. Utilizando as fontes nativas como a Roboto para Android, Ubuntu para Linux, Segoe UI para Windows..
 
-    ```css
+```css
     body {
         font-family: system-ui, -apple-system, BlinkMacSystemFont,
         "Segoe UI", "Roboto", "Ubuntu",
         "Helvetica Neue", "sans-serif";
     }
-    ```
+```
+    
+    
 ## Conhecer e compreender as principais métricas:
 
 Conheça as métricas de performance, como FCP, FMP, TTI, FID e outras siglas importantes.
