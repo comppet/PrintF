@@ -9,9 +9,10 @@ description: Conheça o funcionamento do Reinforcement learning, uma área de Ma
   Learning, que possui maior semelhança com os métodos que humanos.
 introduction: Conheça o funcionamento do Reinforcement learning, uma área de Machine
   Learning, que possui maior semelhança com os métodos que humanos.
-main-class: ML
+main-class: comp
 color: "#EB7728"
 tags:
+- comp
 - ML
 categories: ML
 twitter_text: ''
