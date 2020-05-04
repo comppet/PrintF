@@ -46,7 +46,7 @@ Conheça as métricas de performance, como FCP, FMP, TTI, FID e outras siglas im
 
 > Time to Interactive: Tempo até interatividade é definido como o momento em que o layout se estabilizou, as principais fontes Web estão visíveis, e o encadeamento principal está com disponibilidade suficiente para aceitar entradas do usuário.
     
-## Saiba diferenciar o impacto de arquivos:
+## Saber diferenciar o impacto de arquivos:
 É importante entender que nem todos os bits afetam da mesma forma o carregamento de seu site. Por exemplo: 100KB de um arquivo Javascript que vai precisar passar pelas etapas "parse, compile e execute" irá demandar mais do dispositivo do que 100KB de uma imagem que passara pelas etapas "decode, rasterize e paint".
 
 ## Otimização de imagens e svgs:
@@ -176,11 +176,23 @@ O atributo async faz o download do script durante a análise do documento, mas p
  ```
  
  > Bibliotecas front-end ao incluir plugins de Google Analytics, hotjar e outras ferramentas, realizar essas inserções dos atributos de maneira automática, você pode olhar os arquivos gerados por elas no momento de build do projeto para verificar isso. =)
+ 
+ 
+## Analisar o processamento dos componentes
 
-## **Bônus**
+Bibliotecas front-end como React, Angular e Vue facilitam na criação de componentes e a manipulação de seus estados através de maneira simples. Entretando devemos ter cuidado em realizar muita lógica e processamento antes da renderização desses componentes. 
+
+É uma boa prática você identificar e fazer as manipulações das informações antes da renderização do componente.
+
+Por exemplo: ao invés de ordenar um array no momento da etapa de render do componente, é uma boa prática enviar o array já ordenado e deixar o trabalho de renderizar mais leve.
+
+
+## Bônus
 
 Uma dica interessante é o estudo dos [Web Browsers](https://www.mozilla.org/en-US/firefox/browsers/what-is-a-browser/). Pois ele é um dos principais componentes no processo de renderização da página e entender seu funcionamento é fundamental, principalmente as etapas de [construção, layout e gravação da árvore de renderização](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-tree-construction?hl=pt-br).
 
-## **Conclusão**
+## Conclusão
 
-Existem muitas outras técnicas e elas variam de acordo com a stack que você utilizou no desenvolvimento da aplicação, mas em geral essas dicas se aplicam a maioria de projetos.
+Não quis me apegar a biblioteca como React, Vue, Angular ou Svelte. E deixar um conhecimento que pode ser implementado e estudo por qualquer tipo de stack de desenvolvimento escolhida.
+
+Obrigado pela leitura!
