@@ -94,8 +94,9 @@ Além de verificar se seu site está responsivo como fazemos no front-end, devem
 
 ## Deferir o CSS não usado ou não principal
 
-Carregue o css mais importante primeiro e depois carregue o css não utilizado frequentemente.
-    * [Como realizar o deferimento?](https://developers.google.com/web/tools/lighthouse/audits/unused-css)
+Carregue o css mais importante primeiro e depois carregue o css não utilizado frequentemente. [Como realizar o deferimento?](https://developers.google.com/web/tools/lighthouse/audits/unused-css)
+
+Dessa forma, você permite com que o conteúdo mais importante seja carregado no seu site, dando prioridade ao que vai oferecer uma experiência melhor ao usuário.
 
 ```html
     <!DOCTYPE html>
