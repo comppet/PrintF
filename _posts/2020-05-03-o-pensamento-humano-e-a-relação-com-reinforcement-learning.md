@@ -63,8 +63,10 @@ O Alpha Go Zero utiliza essa nova técnica de aprendizado, na qual ele se torna 
 
 # Referências
 
-[https://dl.acm.org/doi/pdf/10.5555/3295222.3295288](Artigo ACM)
+[Thinking Fast and Slowwith Deep Learning and Tree Search](https://dl.acm.org/doi/pdf/10.5555/3295222.3295288)
 
-[https://www.nature.com/articles/nature24270.epdf?author_access_token=VJXbVjaSHxFoctQQ4p2k4tRgN0jAjWel9jnR3ZoTv0PVW4gB86EEpGqTRDtpIz-2rmo8-KG06gqVobU5NSCFeHILHcVFUeMsbvwS-lxjqQGg98faovwjxeTUgZAUMnRQ](Artigo Nature)
 
-[https://deepmind.com/blog/article/alphago-zero-starting-scratch](Artigo alphago-zero-starting-scratch)
+
+[Mastering the game of Go without human knowledge](https://www.nature.com/articles/nature24270.epdf?author_access_token=VJXbVjaSHxFoctQQ4p2k4tRgN0jAjWel9jnR3ZoTv0PVW4gB86EEpGqTRDtpIz-2rmo8-KG06gqVobU5NSCFeHILHcVFUeMsbvwS-lxjqQGg98faovwjxeTUgZAUMnRQ)
+
+[AlphaGo Zero: Starting from scratch](https://deepmind.com/blog/article/alphago-zero-starting-scratch)
