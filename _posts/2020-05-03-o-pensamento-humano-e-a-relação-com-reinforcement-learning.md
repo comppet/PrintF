@@ -63,8 +63,8 @@ O Alpha Go Zero utiliza essa nova técnica de aprendizado, na qual ele se torna 
 
 # Referências
 
-[https://dl.acm.org/doi/pdf/10.5555/3295222.3295288](https://dl.acm.org/doi/pdf/10.5555/3295222.3295288 "https://dl.acm.org/doi/pdf/10.5555/3295222.3295288")
+[https://dl.acm.org/doi/pdf/10.5555/3295222.3295288](Artigo ACM)
 
-[https://www.nature.com/articles/nature24270.epdf?author_access_token=VJXbVjaSHxFoctQQ4p2k4tRgN0jAjWel9jnR3ZoTv0PVW4gB86EEpGqTRDtpIz-2rmo8-KG06gqVobU5NSCFeHILHcVFUeMsbvwS-lxjqQGg98faovwjxeTUgZAUMnRQ](https://dl.acm.org/doi/pdf/10.5555/3295222.3295288 "https://dl.acm.org/doi/pdf/10.5555/3295222.3295288")
+[https://www.nature.com/articles/nature24270.epdf?author_access_token=VJXbVjaSHxFoctQQ4p2k4tRgN0jAjWel9jnR3ZoTv0PVW4gB86EEpGqTRDtpIz-2rmo8-KG06gqVobU5NSCFeHILHcVFUeMsbvwS-lxjqQGg98faovwjxeTUgZAUMnRQ](Artigo Nature)
 
-[https://deepmind.com/blog/article/alphago-zero-starting-scratch](https://dl.acm.org/doi/pdf/10.5555/3295222.3295288 "https://dl.acm.org/doi/pdf/10.5555/3295222.3295288")
+[https://deepmind.com/blog/article/alphago-zero-starting-scratch](Artigo alphago-zero-starting-scratch)
