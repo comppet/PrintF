@@ -193,6 +193,6 @@ Uma dica interessante é o estudo dos [Web Browsers](https://www.mozilla.org/en-
 
 ## Conclusão
 
-Não quis me apegar a biblioteca como React, Vue, Angular ou Svelte. E deixar um conhecimento que pode ser implementado e estudo por qualquer tipo de stack de desenvolvimento escolhida.
+Não quis me apegar a biblioteca como React, Vue, Angular ou Svelte. Pensei em compartilhar um conhecimento que pode ser implementado independente da stack de desenvolvimento escolhida.
 
 Obrigado pela leitura!
