@@ -20,7 +20,7 @@ introduction: Melhore a experiência do usuário e aumente as taxas de conversã
 # Dicas Simples e rápidas
 
 ## CSS System Font Stack
- 
+
 Uma boa estratégia de Font-Loading é não carregar nenhuma fonte. Utilizando as fontes nativas como a Roboto para Android, Ubuntu para Linux, Segoe UI para Windows..
 
 ```css
@@ -30,23 +30,22 @@ Uma boa estratégia de Font-Loading é não carregar nenhuma fonte. Utilizando a
         "Helvetica Neue", "sans-serif";
     }
 ```
-    
-    
+
 ## Conhecer e compreender as principais métricas:
 
-Conheça as métricas de performance, como FCP, FMP, TTI, FID e outras siglas importantes.
-    * [Saiba mais sobre as métricas de renderização](https://speedcurve.com/blog/rendering-metrics/)
-    * [Referências de auditoria do LightHouse](https://developers.google.com/web/tools/lighthouse/audits/)
+Conheça as métricas de performance, como FCP, FMP, TTI, FID e outras siglas importantes. 
+
+* [Saiba mais sobre as métricas de renderização](https://speedcurve.com/blog/rendering-metrics/) 
+* [Referências de auditoria do LightHouse](https://developers.google.com/web/tools/lighthouse/audits/)
 
 > First Contentful Paint:  é a renderização do conteúdo, podendo ser texto ou imagens. Para compensar as deficiências do First Contentful Paint, o auditor [Lighthouse](https://github.com/GoogleChrome/lighthouse) do Chrome tenta capturar quando o conteúdo principal é renderizado para o usuário.
-    
-    
+
 > First Meaningful Paint: A primeira pintura significativa é essencialmente a pintura efetuada após a maior alteração de layout da parte inicialmente visível da página inicial e o carregamento das fontes da Web.
-    
 
 > Time to Interactive: Tempo até interatividade é definido como o momento em que o layout se estabilizou, as principais fontes Web estão visíveis, e o encadeamento principal está com disponibilidade suficiente para aceitar entradas do usuário.
-    
+
 ## Saber diferenciar o impacto de arquivos:
+
 É importante entender que nem todos os bits afetam da mesma forma o carregamento de seu site. Por exemplo: 100KB de um arquivo Javascript que vai precisar passar pelas etapas "parse, compile e execute" irá demandar mais do dispositivo do que 100KB de uma imagem que passara pelas etapas "decode, rasterize e paint".
 
 ## Otimização de imagens e svgs:
@@ -77,13 +76,13 @@ Uma das formas mais interessantes e trabalhosas é o controle do cacheamento dos
 
 * [Mais sobre htaccess...](https://www.codigofonte.com.br/artigos/confira-20-dicas-e-truques-extremamente-uteis-do-htaccess)
 * [Mais sobre service-workers...](https://developers.google.com/web/ilt/pwa/caching-files-with-service-worker)
-    
+
 ## Habilitar GZIP no servidor:
 
 Essa técnica faz a compactação dos arquivos antes de enviá-los ao navegador do visitante de seu site, reduzindo assim o tamanho dos arquivos e diminuindo o tráfego de rede. Este recurso é muito útil e deve ser usado sempre que possível. Além de economizar a largura de banda do servidor, melhora o tempo de carregamento das páginas do site. Além disso, os buscadores da Web indexaram a sua página mais rapidamente.
 
 > Você também pode habilitar o gzip em seu arquivo de configurações '.htaccess'
-    
+
 ## Entender os recursos que bloqueiam a renderização
 
 O CSS e JS são os reis do bloqueio. Enquanto o CSS não baixa, ele não desenha nenhuma tag na tela. E enquanto o JS não baixa e executa, nenhuma tag abaixo dele é renderizada. Sabendo disso você se motiva a implementar os mecanismos para melhorar a performance. 😎
@@ -94,9 +93,8 @@ Além de verificar se seu site está responsivo como fazemos no front-end, devem
 
 ## Deferir o CSS não usado ou não principal
 
-Carregue o css mais importante primeiro e depois carregue o css não utilizado frequentemente. [Como realizar o deferimento?](https://developers.google.com/web/tools/lighthouse/audits/unused-css)
-
-Dessa forma, você permite com que o conteúdo mais importante seja carregado no seu site, dando prioridade ao que vai oferecer uma experiência melhor ao usuário.
+Carregue o css mais importante primeiro e depois carregue o css não utilizado frequentemente.
+\* [Como realizar o deferimento?](https://developers.google.com/web/tools/lighthouse/audits/unused-css)
 
 ```html
     <!DOCTYPE html>
@@ -108,50 +106,55 @@ Dessa forma, você permite com que o conteúdo mais importante seja carregado no
         ...
     </head>
     </html>
- ```
+```
 
 ## Utilize plugins e sistemas de auditoria para verificação da performance
 
 Eles vão facilitar a sua vida na hora de verificar a performance do seu site, verificar se você não deixou nada de fora e aprender mais sobre Web Performance. 😉😉
-    * [LightHouse](https://developers.google.com/web/tools/lighthouse/)
-    * [WepPage Test](https://www.webpagetest.org/)
-    * [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
-    * [GTMetrix](https://gtmetrix.com/)
-    
-## Modelo RAIL de performance: 
 
-Ultimamente estou dando uma estudada nesse modelo para melhorar a Experiência do Usuário em meus sites e pequenos projeto, pode ser uma boa para você também! 😃
+*  [LightHouse](https://developers.google.com/web/tools/lighthouse/) 
+*   [WepPage Test](https://www.webpagetest.org/) 
+*  [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) 
+*  [GTMetrix](https://gtmetrix.com/)
 
-Resumidamente:
-    * **R**esponse (Tempo de resposta em menos 100ms)
-    * **A**nimation (60fps = 16ms por frame)
-    * **I**dle (estado intermediário, blocos de 50ms)
-    * **L**oad (First Meaningful Paint o mais rápido possível)
-    
+## Modelo RAIL de performance:
+
+Ultimamente estou estudando esse modelo para melhorar a Experiência do Usuário em meus sites e pequenos projeto, pode ser uma boa para você também! 😃
+
+Resumidamente: 
+
+*  **R**esponse (Tempo de resposta em menos 100ms) 
+*  **A**nimation (60fps = 16ms por frame) 
+*  **I**dle (estado intermediário, blocos de 50ms) 
+*  **L**oad (First Meaningful Paint o mais rápido possível)
+
 ## Usar a técnica Code Splitting:
+
 Isso significa que você deve enviar o que a pessoa precisa apenas quando ela precisa. Isso é feito através de Dynamic Importing.
 
 > Bibliotecas como React, possuem uma documentação bem legal sobre o tema você pode ler mais [aqui](https://pt-br.reactjs.org/docs/code-splitting.html)
 
-
 ## Remover o CSS não utilizado:
+
 Essa é legal👌. Você pode utilizar a ferramenta [UnCSS](https://github.com/uncss/uncss) para remover os seletores CSS que não são utilizados.
 
 Resumindo funcionamento do UNCSS:
-    * Os arquivos HTML são carregados pelo jsdom e o JavaScript é executado.
-    * Todas as folhas de estilo são analisadas pelo PostCSS.
-    * document.querySelector filtra os seletores que não são encontrados nos arquivos HTML.
-    * As regras restantes são convertidas de volta para CSS.
+
+*  Os arquivos HTML são carregados pelo jsdom e o JavaScript é executado. 
+* Todas as folhas de estilo são analisadas pelo PostCSS. 
+*  document.querySelector filtra os seletores que não são encontrados nos arquivos HTML. 
+* As regras restantes são convertidas de volta para CSS.
 
 > Existem ferramentas como o purgeCSS que também fazem esse trabalho, você pode inserir no processo de build do seu projeto facilmente.
 
 ## Web Fonts:
+
 Estudar WebFonts e compreender o impacto que o carregamento de fontes tem em sua aplicação web.
-    * Esse cara é muito bom e ja publicou diversos artigos sobre o tema, vale a pena a leitura -> [site do Zach](https://www.zachleat.com/web/fonts/)
-    
-    
+\* Esse cara é muito bom e ja publicou diversos artigos sobre o tema, vale a pena a leitura -> [site do Zach](https://www.zachleat.com/web/fonts/)
+
 ## Lazy Load de Imagens:
-Segundo um post de Rahul NanWani [aqui](https://imagekit.io/blog/lazy-loading-images-complete-guide/), 
+
+Segundo um post de Rahul NanWani [aqui](https://imagekit.io/blog/lazy-loading-images-complete-guide/),
 "A ideia básica de carregamento lento é simples - adiar o carregamento de qualquer coisa que não seja necessária no momento. Para imagens, isso geralmente se traduz em qualquer imagem que não seja visível para o usuário na frente, pode ser carregada com preguiça. À medida que o usuário rola a página, os placeholders de imagem começam a entrar na viewport (parte visível da página da Web). Acionamos a carga dessas imagens quando elas se tornam visíveis."
 
 > Bibliotecas como react, vue e angular possuem módulos e componentes que realizam o lazy loading de maneira bem simples.
@@ -174,19 +177,17 @@ O atributo async faz o download do script durante a análise do documento, mas p
   <script src="myscript.js"></script>
   <script src="myscript.js" defer></script>
   <script src="myscript.js" async></script>
- ```
- 
- > Bibliotecas front-end ao incluir plugins de Google Analytics, hotjar e outras ferramentas, realizar essas inserções dos atributos de maneira automática, você pode olhar os arquivos gerados por elas no momento de build do projeto para verificar isso. =)
- 
- 
+```
+
+> Bibliotecas front-end ao incluir plugins de Google Analytics, hotjar e outras ferramentas, realizar essas inserções dos atributos de maneira automática, você pode olhar os arquivos gerados por elas no momento de build do projeto para verificar isso. =)
+
 ## Analisar o processamento dos componentes
 
-Bibliotecas front-end como React, Angular e Vue facilitam na criação de componentes e a manipulação de seus estados através de maneira simples. Entretando devemos ter cuidado em realizar muita lógica e processamento antes da renderização desses componentes. 
+Bibliotecas front-end como React, Angular e Vue facilitam na criação de componentes e a manipulação de seus estados através de maneira simples. Entretando devemos ter cuidado em realizar muita lógica e processamento antes da renderização desses componentes.
 
 É uma boa prática você identificar e fazer as manipulações das informações antes da renderização do componente.
 
 Por exemplo: ao invés de ordenar um array no momento da etapa de render do componente, é uma boa prática enviar o array já ordenado e deixar o trabalho de renderizar mais leve.
-
 
 ## Bônus
 
