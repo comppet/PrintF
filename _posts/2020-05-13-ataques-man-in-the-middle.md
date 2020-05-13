@@ -12,8 +12,8 @@ introduction: Conheça as características, formas de realizar, identificar e se
 main-class: security
 color: blue
 tags:
-- security
 - comp
+- security
 categories: security
 twitter_text: ''
 
