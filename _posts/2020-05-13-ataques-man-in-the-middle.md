@@ -14,7 +14,7 @@ color: "#EB7728"
 tags:
 - comp
 - security
-categories: security
+categories: comp
 twitter_text: ''
 
 ---
