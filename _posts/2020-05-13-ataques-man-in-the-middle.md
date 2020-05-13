@@ -6,9 +6,9 @@ author-post: Lucas Guimarães Mendes
 title: Ataques Man In The Middle
 image: "/PrintF/assets/img/"
 description: Conheça as características, formas de realizar, identificar e se defender
-  de um dos ataques mais utilizados por hackers!  MAN IN THE MIDDLE!
+  de um dos ataques mais utilizados por hackers!
 introduction: Conheça as características, formas de realizar, identificar e se defender
-  de um dos ataques mais utilizados por hackers!  MAN IN THE MIDDLE!
+  de um dos ataques mais utilizados por hackers!
 main-class: comp
 color: "#EB7728"
 tags:
