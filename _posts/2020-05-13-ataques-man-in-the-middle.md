@@ -7,14 +7,8 @@ title: Ataques Man In The Middle
 image: "/PrintF/assets/img/"
 description: Conheça as características, formas de realizar, identificar e se defender
   de um dos ataques mais utilizados por hackers! O MAN IN THE MIDDLE!
-introduction: O ataque Man in the Middle (MITM) - ou, em Português, homem no meio
-  - é um ataque bastante utilizado por hackers com o fim de obter informações do alvo
-  sem que ele perceba. Em sua maior parte, esses ataques são usados para obter dados
-  bancários, logins e senhas de e-mails e qualquer tipo de dado sensível de usuários
-  ou empresas.  Além disso, este ataque explora diferentes vulnerabilidades, como
-  por exemplo, redes de internet abertas ou sem a proteção adequada, protocolos de
-  comunicação sem camada de segurança, pacote de dados sem criptografia como http
-  e ftp, entre outras.
+introduction: Conheça as características, formas de realizar, identificar e se defender
+  de um dos ataques mais utilizados por hackers! O MAN IN THE MIDDLE!
 main-class: security
 color: "#00FF00"
 tags:
