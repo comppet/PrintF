@@ -10,7 +10,7 @@ description: Conheça as características, formas de realizar, identificar e se 
 introduction: Conheça as características, formas de realizar, identificar e se defender
   de um dos ataques mais utilizados por hackers! O MAN IN THE MIDDLE!
 main-class: security
-color: "#16BEE9"
+color: "#EB7728"
 tags:
 - comp
 - security
