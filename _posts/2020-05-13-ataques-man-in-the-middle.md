@@ -50,7 +50,7 @@ O atacante falsifica o endereço IP de origem dos pacotes a serem enviados para 
 
 Esse método também é utilizado para realizar ataques DDOS, que consistem em sobrecarregar servidores com grande quantidade de pacotes de dados.
 
-* **ARP Spoofing - Também conhecido como envenenamento de cache ARP (*Address Resolution Protocol*)**
+* **ARP Spoofing - Também conhecido como envenenamento de *cache ARP* (*Address Resolution Protocol*)**
 
 Quando um pacote é enviado de um *host* para outro, o endereço MAC deve ser indicado no cabeçalho, que é um identificador fixo e exclusivo atribuído a cada placa de rede. Para que o pacote seja aceito, é verificado se o MAC especificado faz referência ao endereço IP do destinatário.
 
@@ -58,7 +58,7 @@ O objetivo, neste caso, é associar o MAC do atacante ao endereço IP de um *hos
 
 ![](/PrintF/assets/img/downloads/imagem2.png)
 
-* **DNS Spoofing - Também chamado de envenenamento de cache DNS (*Domain Name System*)**
+* **DNS Spoofing - Também chamado de envenenamento de *cache DNS* (*Domain Name System*)**
 
 Os servidores DNS permitem estabelecer nomes para os endereços IP. Desta forma, não é necessário que o usuário precise lembrar dos endereços IP de cada site que pretende visitar, acelerando o processo de navegação na internet.
 
