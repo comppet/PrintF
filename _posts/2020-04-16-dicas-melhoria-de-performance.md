@@ -203,22 +203,7 @@ Obrigado pela leitura!
 
 Let's test some inline math $x$, $y$, $x_1$, $y_1$.
 
-Now a inline math with special character: $|\\psi\\rangle$, $x'$, $x^\\*$.
-  
-  
+$$mean = \frac{\displaystyle\sum_{i=1}^{n} x_{i}}{n}$$
 
-$$mean = \\frac{\\displaystyle\\sum_{i=1}^{n} x_{i}}{n}$$
 
-  
-Test a display math with equation number:  
-
-\\begin{equation}
-   |\\psi_1\\rangle = a|0\\rangle + b|1\\rangle
-\\end{equation}
-Is it O.K.?
-
-Some inline Latex: $$a^2 + b^2 = c^2$$
-
-Display equation:
-
-$$\\int e^{-kx} \\, dx = -\\frac{1}{k} e^{-kx}$$
+$$k_{n+1} = n^2 + k_n^2 - k_{n-1}$$
