@@ -1,22 +1,44 @@
 <!DOCTYPE html>
-<html lang="pt-br" itemscope itemtype="http://schema.org/BlogPosting" {% if page.main-class %}class="post-{{ page.main-class }}"{% endif %}>
-    {% include head.html %}
-    <body>
-        {% include svg-icons.html %}
-        {% include header-post.html %}
-        <section class="post">
+<html
+  lang="pt-br"
+  itemscope
+  itemtype="http://schema.org/BlogPosting"
+  {%
+  if
+  page.main-class
+  %}class="post-{{ page.main-class }}"
+  {%
+  endif
+  %}
+>
+  {% include head.html %}
+  <body>
+    {% include svg-icons.html %} {% include header-post.html %}
+    <section class="post">
+      <article
+        role="article"
+        id="post"
+        class="post-content"
+        itemprop="articleBody"
+      >
+        {{ content }}
+      </article>
 
-            <article role="article" id="post" class="post-content" itemprop="articleBody">
-                {{ content }}
-            </article>
+      {% include share.html %} {% include author.html %} {% if page.comments !=
+      false %} {% include comments.html %} {% endif %} {% include footer.html %}
+    </section>
 
-           
-            {% include share.html %}
-            {% include author.html %}
-            {% if page.comments != false %} 
-                {% include comments.html %}
-            {% endif %}
-            {% include footer.html %}
-        </section>
-    </body>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+          tex2jax: {
+          inlineMath: [['$','$'], ['\\(','\\)']],
+          processEscapes: true
+          }
+      });
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+      type="text/javascript"
+    ></script>
+  </body>
 </html>
