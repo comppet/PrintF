@@ -199,11 +199,3 @@ Não quis me apegar a biblioteca como React, Vue, Angular ou Svelte. Pensei em c
 
 Obrigado pela leitura!
 
-# Testando
-
-Let's test some inline math $x$, $y$, $x_1$, $y_1$.
-
-$$mean = \frac{\displaystyle\sum_{i=1}^{n} x_{i}}{n}$$
-
-
-$$k_{n+1} = n^2 + k_n^2 - k_{n-1}$$
