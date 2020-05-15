@@ -199,3 +199,5 @@ Não quis me apegar a biblioteca como React, Vue, Angular ou Svelte. Pensei em c
 
 Obrigado pela leitura!
 
+
+$$\sum \left ( \sin 30 + \cos 45 \right )\frac{3}{4} {a^4}''$$
