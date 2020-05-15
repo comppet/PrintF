@@ -204,47 +204,21 @@ Obrigado pela leitura!
 Let's test some inline math $x$, $y$, $x_1$, $y_1$.
 
 Now a inline math with special character: $|\\psi\\rangle$, $x'$, $x^\\*$.
+  
+  
 
-Test a display math:
-$$
-   |\\psi_1\\rangle = a|0\\rangle + b|1\\rangle
-$$
-Is it O.K.?
+$$mean = \\frac{\\displaystyle\\sum_{i=1}^{n} x_{i}}{n}$$
 
-Test a display math with equation number:
+  
+Test a display math with equation number:  
+
 \\begin{equation}
    |\\psi_1\\rangle = a|0\\rangle + b|1\\rangle
 \\end{equation}
 Is it O.K.?
 
-Test a display math with equation number:
-$$
-  \\begin{align}
-    |\\psi_1\\rangle &= a|0\\rangle + b|1\\rangle \\\\\\\\
-    |\\psi_2\\rangle &= c|0\\rangle + d|1\\rangle
-  \\end{align}
-$$
-Is it O.K.?
+Some inline Latex: $$a^2 + b^2 = c^2$$
 
-And test a display math without equaltion number:
-$$
-  \\begin{align\\*}
-    |\\psi_1\\rangle &= a|0\\rangle + b|1\\rangle \\\\\\\\
-    |\\psi_2\\rangle &= c|0\\rangle + d|1\\rangle
-  \\end{align\\*}
-$$
-Is it O.K.?
+Display equation:
 
-Test a display math with equation number:
-\\begin{align}
-    |\\psi_1\\rangle &= a|0\\rangle + b|1\\rangle \\\\\\\\
-    |\\psi_2\\rangle &= c|0\\rangle + d|1\\rangle
-\\end{align}
-Is it O.K.?
-
-And test a display math without equaltion number:
-\\begin{align\\*}
-    |\\psi_1\\rangle &= a|0\\rangle + b|1\\rangle \\\\\\\\
-    |\\psi_2\\rangle &= c|0\\rangle + d|1\\rangle
-\\end{align\\*}
-Is it O.K.?
+$$\\int e^{-kx} \\, dx = -\\frac{1}{k} e^{-kx}$$
