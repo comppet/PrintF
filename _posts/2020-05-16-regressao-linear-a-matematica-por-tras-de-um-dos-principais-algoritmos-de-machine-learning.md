@@ -33,7 +33,7 @@ Hoje, irei falar para vocês sobre Regressão Linear (simples e múltipla), um d
 
 Em estatística, Regressão Linear é uma equação para se estimar o valor de uma variável y, dados os valores de outras variáveis x’s. Ou seja, busca-se uma relação entre as variáveis que possa ser representada como uma função linear. Caso não seja uma função linear, devemos procurar por modelos de regressão não-linear.
 
-![](https://lh6.googleusercontent.com/tf98-yAxRWLLT6KtUHE8R6A6e_2wg1TjlWkYjvAlL5_R_KpFOmTeB-htIy6ARnqiKTPH0wKJbzhkM6PAiWGgNZUll-PTY52p-gbOKDSXT0AnUsAbkMDu7kteKbe1x-jMQlevsldW =349x279)
+![](/PrintF/assets/img/downloads/Screenshot from 2020-05-11 20-20-38.png)
 
 Figura 1: exemplo de [regressão linear](https://pt.wikipedia.org/wiki/Regress%C3%A3o_linear).
 
@@ -47,13 +47,11 @@ A notação $$x^{i}$$ representa os valores de entrada (‘input’ ou variávei
 
 Em alguns casos, haverá mais de uma variável de entrada. Assim, para representar cada coluna, usaremos seu número subscrito no _x_: $$x_{j}^{i}$$, sendo que o $$1\\leq i\\leq m$$ e $$1\\leq j\\leq n$$. Onde _m_ representa a quantidade de exemplos e _n_ representa a quantidade de variáveis de entrada.
 
-### 
-
-Hipótese:
+### Hipótese:
 
 Basicamente, o Aprendizado Supervisionado tem como objetivo, dado um training set, aprender uma função h: $$X\\rightarrow Y$$, onde _h(x)_ será um bom preditor para _y_. Por diversas razões, chamamos essa função _h_ de Hipótese.
 
-![](https://lh3.googleusercontent.com/e3fqpItRBzHajh5tKOnFVv8JoaO9ckU6amWctMOn1Wr712dFXm7ZeSLBQASXCkOl6FkhWyUeyGAfz8QytPVBsILQLgd88gwpAbpwORA-IfH_BLKR_eOixRwUC2fu3DvW2h874Ay0 =324x300)
+![](/PrintF/assets/img/downloads/Screenshot from 2020-05-11 20-20-27.png)
 
 Figura 2: Representação gráfica da [função h](https://www.coursera.org/learn/machine-learning).
 
