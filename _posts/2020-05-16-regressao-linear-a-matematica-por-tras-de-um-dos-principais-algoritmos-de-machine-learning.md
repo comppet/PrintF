@@ -13,7 +13,7 @@ tags:
 - Comp
 - Math
 - ML
-categories: Math
+categories: Comp
 twitter_text: ''
 
 ---
