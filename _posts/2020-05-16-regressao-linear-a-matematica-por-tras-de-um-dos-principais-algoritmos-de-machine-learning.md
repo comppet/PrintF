@@ -3,8 +3,7 @@ layout: post
 comments: true
 date: 2020-05-16 14:07:38 -0300
 author-post: Salomão alves
-title: 'REGRESSÃO LINEAR: a matemática por trás de um dos principais algoritmos de
-  Machine Learning'
+title: REGRESSÃO LINEAR
 image: "/PrintF/assets/img/"
 description: Como funciona a matemática por trás do algoritmo de regressão linear.
 introduction: Como funciona a matemática por trás do algoritmo de regressão linear.
@@ -18,7 +17,7 @@ categories: Math
 twitter_text: ''
 
 ---
-# **REGRESSÃO LINEAR: a matemática por trás de um dos principais algoritmos de Machine Learning**
+# **A matemática por trás de um dos principais algoritmos de Machine Learning**
 
 Machine Learning (ML), ou Aprendizado de Máquina, é um termo do momento. O mundo está passando por grandes transformações, mudando de forma rápida e brusca. Coisas inimagináveis há 5 ou 10 anos atrás são corriqueiras nos dias de hoje.
 
@@ -48,7 +47,8 @@ A notação $$x^{i}$$ representa os valores de entrada (‘input’ ou variávei
 
 Em alguns casos, haverá mais de uma variável de entrada. Assim, para representar cada coluna, usaremos seu número subscrito no _x_: $$x_{j}^{i}$$, sendo que o $$1\\leq i\\leq m$$ e $$1\\leq j\\leq n$$. Onde _m_ representa a quantidade de exemplos e _n_ representa a quantidade de variáveis de entrada.
 
-###   
+### 
+
 Hipótese:
 
 Basicamente, o Aprendizado Supervisionado tem como objetivo, dado um training set, aprender uma função h: $$X\\rightarrow Y$$, onde _h(x)_ será um bom preditor para _y_. Por diversas razões, chamamos essa função _h_ de Hipótese.
@@ -61,7 +61,8 @@ Figura 2: Representação gráfica da [função h](https://www.coursera.org/lear
 
 Para mensurar o quão precisa esta nossa função de hipótese, utilizamos a Cost Function: $$J(\\Theta) = \\frac{1}{2*m} * \\sum_{i=1}^{m}\\left ( h_{\\Theta}\\left ( x^{(i)} \\right ) - _{(i)} \\right )^{2}_$$. Nosso objetivo é achar os melhores parâmetros $_\\Theta$$, tal que_ $$J(\\Theta)$$ seja o menor possível.
 
-###   
+### 
+
 Forma Matricial:
 
 Uma importante e interessante forma de pensar nessas funções é na sua forma matricial. Não se engane, ao traduzir essas equações da linguagem natural para linguagem de programação, não devemos utilizar o comando _for_ demasiadamente_,_ uma vez que seu gasto computacional é muito grande, já que utilizamos grandes datasets. Por isso, sempre colocamos os _X_, _Y_ e os _thetas,_ em vetores/matrizes. Assim, utilizamos a multiplicação de matrizes ao nosso favor, reduzindo o tempo e o custo computacional gasto.
@@ -90,21 +91,21 @@ Sempre que houver apenas _n_ variáveis de entrada e 1 variável de resposta usa
 
 Sua forma matricial é:
 
-$$h_{\\Theta}\\left ( X \\right ) = 
+$$h_{\\Theta}\\left ( X \\right ) =
 
 \\begin{bmatrix}
 
 \\Theta_{0} & \\Theta_{1} & ... & \\Theta_{n}
 
-\\end{bmatrix} 
+\\end{bmatrix}
 
 \\begin{bmatrix}
 
-x_{0}\\\\ 
+x_{0}\\\\
 
-x_{1}\\\\ 
+x_{1}\\\\
 
-...\\\\ 
+...\\\\
 
 x_{n}
 
@@ -140,18 +141,20 @@ $$\\Theta_{0}, \\Theta_{1}, ..., \\Theta_{n} = t_{0}, t_{1}, ..., t_{n}$$
 
 _}_
 
-###   
+### 
+
 Taxa de Aprendizagem:
 
 Responsável pelo tamanho do passo quando atualizar os _thetas_, quanto maior for, maior será o passo o que pode ocasionar na perda do mínimo local, quanto menor for, menor o passo e demora mais. Normalmente, comece com passos grandes e vá diminuindo, assim, costuma-se iniciar com $$\\alpha$$=0,05.
 
 ### Derivadas parciais:
 
-$$\\frac{\\partial}{\\partial\\Theta_{0}} \\frac{1}{2*m} * \\sum_{i=i}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)})^{2} = \\frac{1}{m}*\\sum_{i=1}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)})$$
+$$\\frac{\\partial}{\\partial\\Theta_{0}} \\frac{1}{2_m} * \\sum_{i=i}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)})^{2} = \\frac{1}{m}_\\sum_{i=1}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)})$$
 
-$$\\frac{\\partial}{\\partial\\Theta_{j}} \\frac{1}{2*m} * \\sum_{i=i}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)})^{2} = \\frac{1}{m}*\\sum_{i=1}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)}) * x_{j}^{(i)}, 1\\leq j\\leq n$$
+$$\\frac{\\partial}{\\partial\\Theta_{j}} \\frac{1}{2_m} * \\sum_{i=i}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)})^{2} = \\frac{1}{m}_\\sum_{i=1}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)}) * x_{j}^{(i)}, 1\\leq j\\leq n$$
 
-##   
+## 
+
 Feature Normalize:
 
 Para otimizar o algoritmo, podemos colocar os valores de entrada em um intervalo parecido (normalmente entre 0 e 1). Assim, o _theta_ chega mais rápido ao mínimo. Lembre-se, o intervalo não pode ser muito grande nem muito pequeno.
@@ -162,7 +165,8 @@ $$novoX^{(i)} = \\frac{x^{(i)}-\\mu_{1} }{\\sigma_{1}}$$
 
 Onde, $$novoX^{(i)}$$ é o novo _x_, $$\\sigma_{1}$$ é o desvio padrão, $$\\mu_{1}$$ é a média e $$x^{(i)}$$ é o antigo _x_.
 
-##   
+## 
+
 Normal Equation (NE):
 
 Outro método para achar o mínimo de J, porém este é um método não iterativo, portanto, não deve aplicar Feature Normalize. Seja a seguinte situação:
@@ -175,11 +179,11 @@ Assim, formamos as seguintes matrizes:
 
 $$x^{(i)} = \\begin{pmatrix}
 
-1\\\\ 
+1\\\\
 
-x_{1}^{(i)}\\\\ 
+x_{1}^{(i)}\\\\
 
-...\\\\ 
+...\\\\
 
 x_{n}^{(i)}
 
@@ -187,11 +191,11 @@ x_{n}^{(i)}
 
 X = \\begin{pmatrix}
 
-(x^{(1)})^{T}\\\\ 
+(x^{(1)})^{T}\\\\
 
-(x^{(2)})^{T}\\\\ 
+(x^{(2)})^{T}\\\\
 
-...\\\\ 
+...\\\\
 
 (x^{(m)})^{T}
 
@@ -199,11 +203,11 @@ X = \\begin{pmatrix}
 
 Y = \\begin{pmatrix}
 
-y^{(1)}\\\\ 
+y^{(1)}\\\\
 
-y^{(2)}\\\\ 
+y^{(2)}\\\\
 
-...\\\\ 
+...\\\\
 
 y^{(m)}
 
@@ -211,11 +215,11 @@ y^{(m)}
 
 \\Theta = \\begin{pmatrix}
 
-\\Theta_{0}\\\\ 
+\\Theta_{0}\\\\
 
-\\Theta_{1}\\\\ 
+\\Theta_{1}\\\\
 
-...\\\\ 
+...\\\\
 
 \\Theta_{n}
 
