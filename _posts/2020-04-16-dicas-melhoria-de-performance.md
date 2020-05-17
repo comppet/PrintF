@@ -33,9 +33,9 @@ Uma boa estratégia de Font-Loading é não carregar nenhuma fonte. Utilizando a
 
 ## Conhecer e compreender as principais métricas:
 
-Conheça as métricas de performance, como FCP, FMP, TTI, FID e outras siglas importantes. 
+Conheça as métricas de performance, como FCP, FMP, TTI, FID e outras siglas importantes.
 
-* [Saiba mais sobre as métricas de renderização](https://speedcurve.com/blog/rendering-metrics/) 
+* [Saiba mais sobre as métricas de renderização](https://speedcurve.com/blog/rendering-metrics/)
 * [Referências de auditoria do LightHouse](https://developers.google.com/web/tools/lighthouse/audits/)
 
 > First Contentful Paint:  é a renderização do conteúdo, podendo ser texto ou imagens. Para compensar as deficiências do First Contentful Paint, o auditor [Lighthouse](https://github.com/GoogleChrome/lighthouse) do Chrome tenta capturar quando o conteúdo principal é renderizado para o usuário.
@@ -112,21 +112,21 @@ Carregue o css mais importante primeiro e depois carregue o css não utilizado f
 
 Eles vão facilitar a sua vida na hora de verificar a performance do seu site, verificar se você não deixou nada de fora e aprender mais sobre Web Performance. 😉😉
 
-*  [LightHouse](https://developers.google.com/web/tools/lighthouse/) 
-*   [WepPage Test](https://www.webpagetest.org/) 
-*  [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) 
-*  [GTMetrix](https://gtmetrix.com/)
+* [LightHouse](https://developers.google.com/web/tools/lighthouse/)
+* [WepPage Test](https://www.webpagetest.org/)
+* [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
+* [GTMetrix](https://gtmetrix.com/)
 
 ## Modelo RAIL de performance:
 
 Ultimamente estou estudando esse modelo para melhorar a Experiência do Usuário em meus sites e pequenos projeto, pode ser uma boa para você também! 😃
 
-Resumidamente: 
+Resumidamente:
 
-*  **R**esponse (Tempo de resposta em menos 100ms) 
-*  **A**nimation (60fps = 16ms por frame) 
-*  **I**dle (estado intermediário, blocos de 50ms) 
-*  **L**oad (First Meaningful Paint o mais rápido possível)
+* **R**esponse (Tempo de resposta em menos 100ms)
+* **A**nimation (60fps = 16ms por frame)
+* **I**dle (estado intermediário, blocos de 50ms)
+* **L**oad (First Meaningful Paint o mais rápido possível)
 
 ## Usar a técnica Code Splitting:
 
@@ -140,9 +140,9 @@ Essa é legal👌. Você pode utilizar a ferramenta [UnCSS](https://github.com/u
 
 Resumindo funcionamento do UNCSS:
 
-*  Os arquivos HTML são carregados pelo jsdom e o JavaScript é executado. 
-* Todas as folhas de estilo são analisadas pelo PostCSS. 
-*  document.querySelector filtra os seletores que não são encontrados nos arquivos HTML. 
+* Os arquivos HTML são carregados pelo jsdom e o JavaScript é executado.
+* Todas as folhas de estilo são analisadas pelo PostCSS.
+* document.querySelector filtra os seletores que não são encontrados nos arquivos HTML.
 * As regras restantes são convertidas de volta para CSS.
 
 > Existem ferramentas como o purgeCSS que também fazem esse trabalho, você pode inserir no processo de build do seu projeto facilmente.
@@ -198,3 +198,4 @@ Uma dica interessante é o estudo dos [Web Browsers](https://www.mozilla.org/en-
 Não quis me apegar a biblioteca como React, Vue, Angular ou Svelte. Pensei em compartilhar um conhecimento que pode ser implementado independente da stack de desenvolvimento escolhida.
 
 Obrigado pela leitura!
+
