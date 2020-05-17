@@ -43,7 +43,7 @@ Dentro de Aprendizado Supervisionado, os algoritmos podem ser de dois tipos: Cla
 
 ### Notações:
 
-A notação $$x^{i}$$ representa os valores de entrada (‘input’ ou variáveis de entrada) e $$y^{i}$$ representa o valor que se quer prever (‘output’ ou variável target). Os exemplos (training set) sempre serão escritos da seguinte forma: ($$x^{i}$$, $$y^{i}$$) tal que $$1\\leq i\\leq m$$. Portanto, o _i_ é o índice no training set e m é a quantidade de dados que existe. Já o _X_ representa o conjunto dos valores inputs, a mesma lógica vale para _Y_ em relação ao valores outputs.
+A notação $$ x^{i}$$ representa os valores de entrada (‘input’ ou variáveis de entrada) e $$y^{i} $$ representa o valor que se quer prever (‘output’ ou variável target). Os exemplos (training set) sempre serão escritos da seguinte forma: ($$x^{i}$$, $$y^{i}$$) tal que $$1\\leq i\\leq m$$. Portanto, o _i_ é o índice no training set e m é a quantidade de dados que existe. Já o _X_ representa o conjunto dos valores inputs, a mesma lógica vale para _Y_ em relação ao valores outputs.
 
 Em alguns casos, haverá mais de uma variável de entrada. Assim, para representar cada coluna, usaremos seu número subscrito no _x_: $$x_{j}^{i}$$, sendo que o $$1\\leq i\\leq m$$ e $$1\\leq j\\leq n$$. Onde _m_ representa a quantidade de exemplos e _n_ representa a quantidade de variáveis de entrada.
 
@@ -57,11 +57,11 @@ Figura 2: Representação gráfica da [função h](https://www.coursera.org/lear
 
 ### Cost Function
 
-Para mensurar o quão precisa esta nossa função de hipótese, utilizamos a Cost Function:   
+Para mensurar o quão precisa esta nossa função de hipótese, utilizamos a Cost Function:  
 $$  
 J(\\Theta) = \\frac{1}{2*m} * \\sum_{i=1}^{m}\\left ( h_{\\Theta}\\left ( x^{(i)} \\right ) _{(i)} \\right )^{2}  
-_$$.   
-Nosso objetivo é achar os melhores parâmetros $_\\Theta$$, tal que_ $$J(\\Theta)$$ seja o menor possível.
+$$.  
+Nosso objetivo é achar os melhores parâmetros $_\\Theta$$, tal que $$J(\\Theta)$$ seja o menor possível.
 
 ### 
 
@@ -81,7 +81,10 @@ Como já explicado acima, usaremos a Função de Hipótese para criar a linha de
 
 ### Cost Function:
 
-Já a função de custo é definida da seguinte forma: $$J(\\Theta_{0}, \\Theta_{1}) = \\frac{1}{2*m} * \\sum_{i=1}^{m}\\left ( h_{\\Theta}\\left ( x^{(i)} \\right ) - _{(i)} \\right )^{2}_$$.
+Já a função de custo é definida da seguinte forma:   
+$$  
+J(\\Theta_{0}, \\Theta_{1}) = \\frac{1}{2*m} * \\sum_{i=1}^{m}\\left ( h_{\\Theta}\\left ( x^{(i)} \\right ) - _{(i)} \\right )^{2}  
+_$$.
 
 ## Regressão Linear Múltipla
 
@@ -89,11 +92,16 @@ Sempre que houver apenas _n_ variáveis de entrada e 1 variável de resposta usa
 
 ### Hipótese:
 
-É definida da seguinte forma: $$h_{\\Theta}\\left ( X \\right ) = \\Theta_{0} + \\Theta_{1}*x_{1}^{(i)} + \\Theta_{2}*x_{2}^{(i)} + ... + \\Theta_{n}*x_{n}^{(i)}$$. Observa-se que a quantidade de parâmetros _theta_ depende da quantidade de _x’s_.
+É definida da seguinte forma:  
+ $$  
+h_{\\Theta}\\left ( X \\right ) = \\Theta_{0} + \\Theta_{1}*x_{1}^{(i)} + \\Theta_{2}*x_{2}^{(i)} + ... + \\Theta_{n}*x_{n}^{(i)}  
+$$   
+Observa-se que a quantidade de parâmetros _theta_ depende da quantidade de _x’s_.
 
 Sua forma matricial é:
 
-$$h_{\\Theta}\\left ( X \\right ) =
+$$  
+h_{\\Theta}\\left ( X \\right ) =
 
 \\begin{bmatrix}
 
@@ -113,7 +121,8 @@ x_{n}
 
 \\end{bmatrix}
 
-= \\Theta^{T}x$$, onde $$x_{0}=1$$
+= \\Theta^{T}x  
+$$, onde $x_{0}=1$
 
 Note que não importa quantos _thetas_ ou quantos _x’s_ tem, a multiplicação de matrizes resolve com apenas um comando, por isso, ao codificar, não há necessidade de criar uma função para Regressão Linear Simples e outra para Múltipla.
 
