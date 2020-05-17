@@ -28,17 +28,19 @@
       false %} {% include comments.html %} {% endif %} {% include footer.html %}
     </section>
 
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-          tex2jax: {
-          inlineMath: [['$','$'], ['\\(','\\)']],
-          processEscapes: true
-          }
+    <!-- Parse the Latex divs with Katex-->
+    <script type="text/javascript">
+      $("script[type='math/tex']").replaceWith(function () {
+        var tex = $(this).text();
+        return katex.renderToString(tex, { displayMode: false });
+      });
+
+      $("script[type='math/tex; mode=display']").replaceWith(function () {
+        var tex = $(this).text();
+        return katex.renderToString(tex.replace(/%.*/g, ""), {
+          displayMode: true,
+        });
       });
     </script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
-      type="text/javascript"
-    ></script>
   </body>
 </html>
