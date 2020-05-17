@@ -19,8 +19,6 @@ disqus_username: comppetufu
 
 # Build settings
 markdown: kramdown
-kramdown:
-  math_engine: mathjax
 highlighter: rouge
 permalink: /:title/
 
