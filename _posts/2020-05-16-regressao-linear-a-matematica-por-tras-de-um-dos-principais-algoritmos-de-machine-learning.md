@@ -43,7 +43,7 @@ Dentro de Aprendizado Supervisionado, os algoritmos podem ser de dois tipos: Cla
 
 ### Notações:
 
-A notação $$ x^{i}$$ representa os valores de entrada (‘input’ ou variáveis de entrada) e $$y^{i} $$ representa o valor que se quer prever (‘output’ ou variável target). Os exemplos (training set) sempre serão escritos da seguinte forma: ($$x^{i}$$, $$y^{i}$$) tal que $$1\\leq i\\leq m$$. Portanto, o _i_ é o índice no training set e m é a quantidade de dados que existe. Já o _X_ representa o conjunto dos valores inputs, a mesma lógica vale para _Y_ em relação ao valores outputs.
+A notação $x^{i}$ representa os valores de entrada (‘input’ ou variáveis de entrada) e $y^{i}$ representa o valor que se quer prever (‘output’ ou variável target). Os exemplos (training set) sempre serão escritos da seguinte forma: ($x^{i}$, $y^{i}$) tal que $1\\leq i\\leq m$. Portanto, o _i_ é o índice no training set e m é a quantidade de dados que existe. Já o _X_ representa o conjunto dos valores inputs, a mesma lógica vale para _Y_ em relação ao valores outputs.
 
 Em alguns casos, haverá mais de uma variável de entrada. Assim, para representar cada coluna, usaremos seu número subscrito no _x_: $x_{j}^{i}$, sendo que o $1\\leq i\\leq m$ e $1\\leq j\\leq n$. Onde _m_ representa a quantidade de exemplos e _n_ representa a quantidade de variáveis de entrada.
 
@@ -59,13 +59,9 @@ Figura 2: Representação gráfica da [função h](https://www.coursera.org/lear
 
 Para mensurar o quão precisa esta nossa função de hipótese, utilizamos a Cost Function:
 
-$$
-J(\\Theta) = \\frac{1}{2*m}* \\sum_{i=1}^{m}\\left ( h_{\\Theta}\\left ( x^{(i)} \\right ) _{(i)} \\right )^{2}
-$$
+$J(\\Theta) = \\frac{1}{2*m}* \\sum_{i=1}^{m}\\left ( h_{\\Theta}\\left ( x^{(i)} \\right ) _{(i)} \\right )^{2}$
 
 Nosso objetivo é achar os melhores parâmetros $_\\Theta$, tal que $J(\\Theta)$ seja o menor possível.
-
-###
 
 Forma Matricial:
 
@@ -79,7 +75,7 @@ Sempre que houver apenas 1 variável de entrada e 1 variável de resposta usarem
 
 ### Hipótese:
 
-Como já explicado acima, usaremos a Função de Hipótese para criar a linha de regressão (igual mostrado na Figura 1). A função _h_ é definida como: $h_{\\Theta} = \\Theta _{0} + \\Theta _{1}*x$. Veja, essa equação sempre criará uma reta, sendo $\\Theta _{0}$ o coeficiente linear e o $\\Theta _{1}$ o coeficiente angular.
+Como já explicado acima, usaremos a Função de Hipótese para criar a linha de regressão igual mostrado na Figura 1. A função _h_ é definida como: $h_{\\Theta} = \\Theta _{0} + \\Theta _{1}*x$. Veja, essa equação sempre criará uma reta, sendo $\\Theta _{0}$ o coeficiente linear e o $\\Theta _{1}$ o coeficiente angular.
 
 ### Cost Function:
 
@@ -98,7 +94,7 @@ Sempre que houver apenas _n_ variáveis de entrada e 1 variável de resposta usa
 É definida da seguinte forma:
 
 $$
-h*{\\Theta}\\left ( X \\right ) = \\Theta*{0} + \\Theta*{1}\*x*{1}^{(i)} + \\Theta*{2}\*x*{2}^{(i)} + ... + \\Theta*{n}\*x*{n}^{(i)}
+  h*{\\Theta}\\left ( X \\right ) = \\Theta*{0} + \\Theta*{1}\*x*{1}^{(i)} + \\Theta*{2}\*x*{2}^{(i)} + ... + \\Theta*{n}\*x*{n}^{(i)}
 $$
 
 Observa-se que a quantidade de parâmetros _theta_ depende da quantidade de _x’s_.
@@ -129,7 +125,7 @@ x\_{n}
 = \\Theta^{T}x
 $$
 
-, onde \\\\\\\\\\\$x\\\\\\\\\\\\_{0}=1\$
+, onde $x_{0}=1$
 
 Note que não importa quantos _thetas_ ou quantos _x’s_ tem, a multiplicação de matrizes resolve com apenas um comando, por isso, ao codificar, não há necessidade de criar uma função para Regressão Linear Simples e outra para Múltipla.
 
@@ -148,21 +144,19 @@ Cria-se um loop, repetindo enquanto converge (costuma-se passar uma quantidade d
 
 _loop {_
 
-$$ t_{0} = \\Theta_{0} - \\alpha \\frac{\\partial}{\\partial \\Theta_{0}} J $$
+$t_{0} = \\Theta_{0} - \\alpha \\frac{\\partial}{\\partial \\Theta_{0}} J$
 
-$$ t_{1} = \\Theta_{1} - \\alpha \\frac{\\partial}{\\partial \\Theta_{1}} J $$
+$t_{1} = \\Theta_{1} - \\alpha \\frac{\\partial}{\\partial \\Theta_{1}} J$
 
 ...
 
-$$ t_{n} = \\Theta_{n} - \\alpha \\frac{\\partial}{\\partial \\Theta_{n}} J $$
+$t_{n} = \\Theta_{n} - \\alpha \\frac{\\partial}{\\partial \\Theta_{n}} J$
 
-$$\\Theta_{0}, \\Theta_{1}, ..., \\Theta_{n} = t_{0}, t_{1}, ..., t_{n}$$
+$\\Theta_{0}, \\Theta_{1}, ..., \\Theta_{n} = t_{0}, t_{1}, ..., t_{n}$
 
 _}_
 
-###
-
-Taxa de Aprendizagem:
+### Taxa de Aprendizagem:
 
 Responsável pelo tamanho do passo quando atualizar os _thetas_, quanto maior for, maior será o passo o que pode ocasionar na perda do mínimo local, quanto menor for, menor o passo e demora mais. Normalmente, comece com passos grandes e vá diminuindo, assim, costuma-se iniciar com $$\\alpha$$=0,05.
 
