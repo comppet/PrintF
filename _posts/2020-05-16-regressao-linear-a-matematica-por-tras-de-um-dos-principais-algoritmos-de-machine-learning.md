@@ -81,7 +81,7 @@ Como já explicado acima, usaremos a Função de Hipótese para criar a linha de
 
 ### Cost Function:
 
-Já a função de custo é definida da seguinte forma:   
+Já a função de custo é definida da seguinte forma:  
 $$  
 J(\\Theta_{0}, \\Theta_{1}) = \\frac{1}{2*m} * \\sum_{i=1}^{m}\\left ( h_{\\Theta}\\left ( x^{(i)} \\right ) - _{(i)} \\right )^{2}  
 _$$.
@@ -93,9 +93,9 @@ Sempre que houver apenas _n_ variáveis de entrada e 1 variável de resposta usa
 ### Hipótese:
 
 É definida da seguinte forma:  
- $$  
+$$  
 h_{\\Theta}\\left ( X \\right ) = \\Theta_{0} + \\Theta_{1}*x_{1}^{(i)} + \\Theta_{2}*x_{2}^{(i)} + ... + \\Theta_{n}*x_{n}^{(i)}  
-$$   
+$$  
 Observa-se que a quantidade de parâmetros _theta_ depende da quantidade de _x’s_.
 
 Sua forma matricial é:
@@ -253,3 +253,52 @@ O que mostrei aqui é apenas a ponta do iceberg. Há inúmeros algoritmos de mac
 ## Bônus:
 
 Caso esteja curioso para saber como ficariam esses algoritmos usando a linguagem de programação Octave, visite o meu [repositório](https://github.com/salomaoalves/MachineLearning).
+
+Teste:
+
+Let's test some inline math $x$, $y$, $x_1$, $y_1$.
+
+Now a inline math with special character: $|\\psi\\rangle$, $x'$, $x^\\*$.
+
+Test a display math:
+$$
+   |\\psi_1\\rangle = a|0\\rangle + b|1\\rangle
+$$
+Is it O.K.?
+
+Test a display math with equation number:
+\\begin{equation}
+   |\\psi_1\\rangle = a|0\\rangle + b|1\\rangle
+\\end{equation}
+Is it O.K.?
+
+Test a display math with equation number:
+$$
+  \\begin{align}
+    |\\psi_1\\rangle &= a|0\\rangle + b|1\\rangle \\\\\\\\
+    |\\psi_2\\rangle &= c|0\\rangle + d|1\\rangle
+  \\end{align}
+$$
+Is it O.K.?
+
+And test a display math without equaltion number:
+$$
+  \\begin{align\\*}
+    |\\psi_1\\rangle &= a|0\\rangle + b|1\\rangle \\\\\\\\
+    |\\psi_2\\rangle &= c|0\\rangle + d|1\\rangle
+  \\end{align\\*}
+$$
+Is it O.K.?
+
+Test a display math with equation number:
+\\begin{align}
+    |\\psi_1\\rangle &= a|0\\rangle + b|1\\rangle \\\\\\\\
+    |\\psi_2\\rangle &= c|0\\rangle + d|1\\rangle
+\\end{align}
+Is it O.K.?
+
+And test a display math without equaltion number:
+\\begin{align\\*}
+    |\\psi_1\\rangle &= a|0\\rangle + b|1\\rangle \\\\\\\\
+    |\\psi_2\\rangle &= c|0\\rangle + d|1\\rangle
+\\end{align\\*}
