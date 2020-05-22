@@ -19,6 +19,7 @@ disqus_username: comppetufu
 
 # Build settings
 markdown: kramdown
+mathjax: true
 highlighter: rouge
 permalink: /:title/
 

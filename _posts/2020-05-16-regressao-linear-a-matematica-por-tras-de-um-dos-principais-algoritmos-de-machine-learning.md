@@ -10,13 +10,13 @@ introduction: Como funciona a matemática por trás do algoritmo de regressão l
 main-class: comp
 color: "#265AA9 "
 tags:
-- Comp
-- Math
-- ML
+  - Comp
+  - Math
+  - ML
 categories: Comp
-twitter_text: ''
-
+twitter_text: ""
 ---
+
 # **A matemática por trás de um dos principais algoritmos de Machine Learning**
 
 Machine Learning (ML), ou Aprendizado de Máquina, é um termo do momento. O mundo está passando por grandes transformações, mudando de forma rápida e brusca. Coisas inimagináveis há 5 ou 10 anos atrás são corriqueiras nos dias de hoje.
@@ -45,11 +45,11 @@ Dentro de Aprendizado Supervisionado, os algoritmos podem ser de dois tipos: Cla
 
 A notação $$ x^{i}$$ representa os valores de entrada (‘input’ ou variáveis de entrada) e $$y^{i} $$ representa o valor que se quer prever (‘output’ ou variável target). Os exemplos (training set) sempre serão escritos da seguinte forma: ($$x^{i}$$, $$y^{i}$$) tal que $$1\\leq i\\leq m$$. Portanto, o _i_ é o índice no training set e m é a quantidade de dados que existe. Já o _X_ representa o conjunto dos valores inputs, a mesma lógica vale para _Y_ em relação ao valores outputs.
 
-Em alguns casos, haverá mais de uma variável de entrada. Assim, para representar cada coluna, usaremos seu número subscrito no _x_: $$x_{j}^{i}$$, sendo que o $$1\\leq i\\leq m$$ e $$1\\leq j\\leq n$$. Onde _m_ representa a quantidade de exemplos e _n_ representa a quantidade de variáveis de entrada.
+Em alguns casos, haverá mais de uma variável de entrada. Assim, para representar cada coluna, usaremos seu número subscrito no _x_: $x_{j}^{i}$, sendo que o $1\\leq i\\leq m$ e $1\\leq j\\leq n$. Onde _m_ representa a quantidade de exemplos e _n_ representa a quantidade de variáveis de entrada.
 
 ### Hipótese:
 
-Basicamente, o Aprendizado Supervisionado tem como objetivo, dado um training set, aprender uma função h: $$X\\rightarrow Y$$, onde _h(x)_ será um bom preditor para _y_. Por diversas razões, chamamos essa função _h_ de Hipótese.
+Basicamente, o Aprendizado Supervisionado tem como objetivo, dado um training set, aprender uma função h: $X\\rightarrow Y$, onde _h(x)_ será um bom preditor para _y_. Por diversas razões, chamamos essa função _h_ de Hipótese.
 
 ![](/PrintF/assets/img/downloads/Screenshot from 2020-05-11 20-20-27.png)
 
@@ -57,17 +57,19 @@ Figura 2: Representação gráfica da [função h](https://www.coursera.org/lear
 
 ### Cost Function
 
-Para mensurar o quão precisa esta nossa função de hipótese, utilizamos a Cost Function:  
-$$  
-J(\\Theta) = \\frac{1}{2*m} * \\sum_{i=1}^{m}\\left ( h_{\\Theta}\\left ( x^{(i)} \\right ) _{(i)} \\right )^{2}  
-$$.  
-Nosso objetivo é achar os melhores parâmetros $_\\Theta$$, tal que $$J(\\Theta)$$ seja o menor possível.
+Para mensurar o quão precisa esta nossa função de hipótese, utilizamos a Cost Function:
 
-### 
+$$
+J(\\Theta) = \\frac{1}{2*m}* \\sum_{i=1}^{m}\\left ( h_{\\Theta}\\left ( x^{(i)} \\right ) _{(i)} \\right )^{2}
+$$
+
+Nosso objetivo é achar os melhores parâmetros $_\\Theta$, tal que $J(\\Theta)$ seja o menor possível.
+
+###
 
 Forma Matricial:
 
-Uma importante e interessante forma de pensar nessas funções é na sua forma matricial. Não se engane, ao traduzir essas equações da linguagem natural para linguagem de programação, não devemos utilizar o comando _for_ demasiadamente_,_ uma vez que seu gasto computacional é muito grande, já que utilizamos grandes datasets. Por isso, sempre colocamos os _X_, _Y_ e os _thetas,_ em vetores/matrizes. Assim, utilizamos a multiplicação de matrizes ao nosso favor, reduzindo o tempo e o custo computacional gasto.
+Uma importante e interessante forma de pensar nessas funções é na sua forma matricial. Não se engane, ao traduzir essas equações da linguagem natural para linguagem de programação, não devemos utilizar o comando _for_ demasiadamente*,* uma vez que seu gasto computacional é muito grande, já que utilizamos grandes datasets. Por isso, sempre colocamos os _X_, _Y_ e os _thetas,_ em vetores/matrizes. Assim, utilizamos a multiplicação de matrizes ao nosso favor, reduzindo o tempo e o custo computacional gasto.
 
 Linguagens como MATLAB e Octave, assim como a biblioteca NumPy do Python foram criadas com intuito de facilitar esse tipo de operação.
 
@@ -77,14 +79,15 @@ Sempre que houver apenas 1 variável de entrada e 1 variável de resposta usarem
 
 ### Hipótese:
 
-Como já explicado acima, usaremos a Função de Hipótese para criar a linha de regressão (igual mostrado na Figura 1). A função _h_ é definida como: $$h_{\\Theta} = \\Theta _{0} + \\Theta _{1}*x$$. Veja, essa equação sempre criará uma reta, sendo $$ \\Theta _{0}$$ o coeficiente linear e o $$ \\Theta _{1}$$ o coeficiente angular.
+Como já explicado acima, usaremos a Função de Hipótese para criar a linha de regressão (igual mostrado na Figura 1). A função _h_ é definida como: $h_{\\Theta} = \\Theta _{0} + \\Theta _{1}*x$. Veja, essa equação sempre criará uma reta, sendo $\\Theta _{0}$ o coeficiente linear e o $\\Theta _{1}$ o coeficiente angular.
 
 ### Cost Function:
 
-Já a função de custo é definida da seguinte forma:  
-$$  
-J(\\Theta_{0}, \\Theta_{1}) = \\frac{1}{2*m} * \\sum_{i=1}^{m}\\left ( h_{\\Theta}\\left ( x^{(i)} \\right ) - _{(i)} \\right )^{2}  
-_$$.
+Já a função de custo é definida da seguinte forma:
+
+$$
+J(\\Theta_{0}, \\Theta_{1}) = \\frac{1}{2*m} * \\sum_{i=1}^{m}\\left ( h_{\\Theta}\\left ( x^{(i)} \\right ) - _{(i)} \\right )^{2}
+$$
 
 ## Regressão Linear Múltipla
 
@@ -92,43 +95,48 @@ Sempre que houver apenas _n_ variáveis de entrada e 1 variável de resposta usa
 
 ### Hipótese:
 
-É definida da seguinte forma:  
-$$  
-h_{\\Theta}\\left ( X \\right ) = \\Theta_{0} + \\Theta_{1}*x_{1}^{(i)} + \\Theta_{2}*x_{2}^{(i)} + ... + \\Theta_{n}*x_{n}^{(i)}  
-$$  
+É definida da seguinte forma:
+
+$$
+h*{\\Theta}\\left ( X \\right ) = \\Theta*{0} + \\Theta*{1}\*x*{1}^{(i)} + \\Theta*{2}\*x*{2}^{(i)} + ... + \\Theta*{n}\*x*{n}^{(i)}
+$$
+
 Observa-se que a quantidade de parâmetros _theta_ depende da quantidade de _x’s_.
 
 Sua forma matricial é:
 
-$$  
-h_{\\Theta}\\left ( X \\right ) =
+$$
+h\_{\\Theta}\\left ( X \\right ) =
 
 \\begin{bmatrix}
 
-\\Theta_{0} & \\Theta_{1} & ... & \\Theta_{n}
+\\Theta*{0} & \\Theta*{1} & ... & \\Theta\_{n}
 
 \\end{bmatrix}
 
 \\begin{bmatrix}
 
-x_{0}\\\\
+x\_{0}\\\\
 
-x_{1}\\\\
+x\_{1}\\\\
 
 ...\\\\
 
-x_{n}
+x\_{n}
 
 \\end{bmatrix}
 
-= \\Theta^{T}x  
-$$, onde $x_{0}=1$
+= \\Theta^{T}x
+$$
+
+, onde \\\\\\\\\\\$x\\\\\\\\\\\\_{0}=1\$
 
 Note que não importa quantos _thetas_ ou quantos _x’s_ tem, a multiplicação de matrizes resolve com apenas um comando, por isso, ao codificar, não há necessidade de criar uma função para Regressão Linear Simples e outra para Múltipla.
 
 ### Cost Function:
 
-Já na função de custo, não há grandes alterações. Ela é definida: $$J(\\Theta_{0}, \\Theta_{1}, \\Theta_{2}, ..., \\Theta_{n}) = J(\\Theta^{T}) = \\frac{1}{2*m} * \\sum_{i=1}^{m}\\left ( h_{\\Theta}\\left ( x^{(i)} \\right ) - _{(i)} \\right )^{2}_$$, onde o T sobrescrito ao _theta_ representa a transposta.
+Já na função de custo, não há grandes alterações. Ela é definida:
+$J(\\Theta_{0}, \\Theta_{1}, \\Theta_{2}, ..., \\Theta_{n}) = J(\\Theta^{T}) = \\frac{1}{2*m} * \\sum_{i=1}^{m}\\left ( h_{\\Theta}\\left ( x^{(i)} \\right ) - _{(i)} \\right )^{2}_$, onde o T sobrescrito ao _theta_ representa a transposta.
 
 ## Gradient Descent (GD)
 
@@ -152,7 +160,7 @@ $$\\Theta_{0}, \\Theta_{1}, ..., \\Theta_{n} = t_{0}, t_{1}, ..., t_{n}$$
 
 _}_
 
-### 
+###
 
 Taxa de Aprendizagem:
 
@@ -160,11 +168,15 @@ Responsável pelo tamanho do passo quando atualizar os _thetas_, quanto maior fo
 
 ### Derivadas parciais:
 
-$$\\frac{\\partial}{\\partial\\Theta_{0}} \\frac{1}{2_m} * \\sum_{i=i}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)})^{2} = \\frac{1}{m}_\\sum_{i=1}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)})$$
+$$
+\\frac{\\partial}{\\partial\\Theta_{0}} \\frac{1}{2_m} * \\sum_{i=i}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)})^{2} = \\frac{1}{m}_\\sum_{i=1}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)})
+$$
 
-$$\\frac{\\partial}{\\partial\\Theta_{j}} \\frac{1}{2_m} * \\sum_{i=i}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)})^{2} = \\frac{1}{m}_\\sum_{i=1}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)}) * x_{j}^{(i)}, 1\\leq j\\leq n$$
+$$
+\\frac{\\partial}{\\partial\\Theta_{j}} \\frac{1}{2_m} *\\ sum_{i=i}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)})^{2} = \\frac{1}{m}_\\sum_{i=1}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)})* x_{j}^{(i)}, 1\\leq j\\leq n
+$$
 
-## 
+##
 
 Feature Normalize:
 
@@ -174,22 +186,21 @@ Realize a seguinte operação para fazer a normalização:
 
 $$novoX^{(i)} = \\frac{x^{(i)}-\\mu_{1} }{\\sigma_{1}}$$
 
-Onde, $$novoX^{(i)}$$ é o novo _x_, $$\\sigma_{1}$$ é o desvio padrão, $$\\mu_{1}$$ é a média e $$x^{(i)}$$ é o antigo _x_.
+Onde, $novoX^{(i)}$ é o novo _x_, $\\sigma_{1}$ é o desvio padrão, $\\mu_{1}$ é a média e $x^{(i)}$ é o antigo _x_.
 
-## 
+##
 
 Normal Equation (NE):
 
 Outro método para achar o mínimo de J, porém este é um método não iterativo, portanto, não deve aplicar Feature Normalize. Seja a seguinte situação:
 
-* m exemplos: $$(x^{(1)}, y^{(1)}), ..., (x^{(m)}, y^{(m)})$$
-* n features: $$(x_{1}, x_{2}, ..., x_{n})$$
-* n+1 thetas: $$(\\Theta_{0}, \\Theta_{1}, \\Theta_{2}, ..., \\Theta_{n})$$
+- m exemplos: $(x^{(1)}, y^{(1)}), ..., (x^{(m)}, y^{(m)})$
+- n features: $(x_{1}, x_{2}, ..., x_{n})$
+- n+1 thetas: $(\\Theta_{0}, \\Theta_{1}, \\Theta_{2}, ..., \\Theta_{n})$
 
 Assim, formamos as seguintes matrizes:
 
-$$x^{(i)} = \\begin{pmatrix}
-
+$$
 1\\\\
 
 x_{1}^{(i)}\\\\
@@ -238,8 +249,6 @@ y^{(m)}
 
 Logo, para achar o vetor _theta_ faz a seguinte multiplicação de matriz:
 
-$$\\Theta = (X^{T}*X)^{-1}*X^{T}*Y$$
-
 ## GD vs NE:
 
 Acabamos de ver dois métodos para achar o mínimo da Cost Function, mas fica a pergunta, qual deles é melhor? A resposta, como sempre, depende. Abaixo listei algumas características de ambos.
@@ -262,43 +271,62 @@ Now a inline math with special character: $|\\psi\\rangle$, $x'$, $x^\\*$.
 
 Test a display math:
 $$
-   |\\psi_1\\rangle = a|0\\rangle + b|1\\rangle
+
+|\\psi_1\\rangle = a|0\\rangle + b|1\\rangle
+
 $$
 Is it O.K.?
 
 Test a display math with equation number:
+$$
+
 \\begin{equation}
-   |\\psi_1\\rangle = a|0\\rangle + b|1\\rangle
+|\\psi_1\\rangle = a|0\\rangle + b|1\\rangle
 \\end{equation}
+
+$$
 Is it O.K.?
 
 Test a display math with equation number:
 $$
-  \\begin{align}
-    |\\psi_1\\rangle &= a|0\\rangle + b|1\\rangle \\\\\\\\
-    |\\psi_2\\rangle &= c|0\\rangle + d|1\\rangle
-  \\end{align}
-$$
-Is it O.K.?
 
-And test a display math without equaltion number:
-$$
-  \\begin{align\\*}
-    |\\psi_1\\rangle &= a|0\\rangle + b|1\\rangle \\\\\\\\
-    |\\psi_2\\rangle &= c|0\\rangle + d|1\\rangle
-  \\end{align\\*}
-$$
-Is it O.K.?
-
-Test a display math with equation number:
 \\begin{align}
-    |\\psi_1\\rangle &= a|0\\rangle + b|1\\rangle \\\\\\\\
-    |\\psi_2\\rangle &= c|0\\rangle + d|1\\rangle
+|\\psi_1\\rangle &= a|0\\rangle + b|1\\rangle \\\\\\\\
+|\\psi_2\\rangle &= c|0\\rangle + d|1\\rangle
 \\end{align}
+
+$$
 Is it O.K.?
 
 And test a display math without equaltion number:
-\\begin{align\\*}
-    |\\psi_1\\rangle &= a|0\\rangle + b|1\\rangle \\\\\\\\
-    |\\psi_2\\rangle &= c|0\\rangle + d|1\\rangle
-\\end{align\\*}
+$$
+
+\\begin{align\\_}
+|\\psi_1\\rangle &= a|0\\rangle + b|1\\rangle \\\\\\\\
+|\\psi_2\\rangle &= c|0\\rangle + d|1\\rangle
+\\end{align\\_}
+
+$$
+Is it O.K.?
+
+Test a display math with equation number:
+$$
+
+\\begin{align}
+|\\psi_1\\rangle &= a|0\\rangle + b|1\\rangle \\\\\\\\
+|\\psi_2\\rangle &= c|0\\rangle + d|1\\rangle
+\\end{align}
+
+$$
+Is it O.K.?
+
+And test a display math without equaltion number:
+$$
+
+\\begin{align\\_}
+|\\psi_1\\rangle &= a|0\\rangle + b|1\\rangle \\\\\\\\
+|\\psi_2\\rangle &= c|0\\rangle + d|1\\rangle
+\\end{align\\_}
+
+$$
+$$
