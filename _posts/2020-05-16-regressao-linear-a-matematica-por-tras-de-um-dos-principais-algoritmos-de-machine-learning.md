@@ -7,7 +7,7 @@ title: Regressão Linear
 image: "/PrintF/assets/img/"
 description: Como funciona a matemática por trás do algoritmo de regressão linear.
 introduction: Como funciona a matemática por trás do algoritmo de regressão linear.
-main-class: ML
+main-class: comp
 color: "#265AA9 "
 tags:
 - Comp
