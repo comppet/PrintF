@@ -75,7 +75,7 @@ Sempre que houver apenas 1 variável de entrada e 1 variável de resposta usarem
 
 ### Hipótese:
 
-Como já explicado acima, usaremos a Função de Hipótese para criar a linha de regressão igual mostrado na Figura 1. A função _h_ é definida como: $h_{\\Theta} = \\Theta_{0} + \\Theta _{1}*x$. Veja, essa equação sempre criará uma reta, sendo $\\Theta_{0}$ o coeficiente linear e o $\\Theta _{1}$ o coeficiente angular.
+Como já explicado acima, usaremos a Função de Hipótese para criar a linha de regressão igual mostrado na Figura 1. A função _h_ é definida como: $h_{\\\\Theta} = \\Theta_{0} + \\Theta _{1}* x$. Veja, essa equação sempre criará uma reta, sendo $\\Theta_{0}$ o coeficiente linear e o $\\Theta _{1}$ o coeficiente angular.
 
 ### Cost Function:
 
@@ -160,7 +160,7 @@ Outro método para achar o mínimo de J, porém este é um método não iterativ
 
 Assim, formamos as seguintes matrizes:
 
-$1\\\\x_{1}^{(i)}\\\\...\\\\x_{n}^{(i)}\\end{pmatrix}_{(n+1)\\times 1}X = \\begin{pmatrix}(x^{(1)})^{T}\\\\(x^{(2)})^{T}\\\\...\\\\(x^{(m)})^{T}\\end{pmatrix}_{m\\times(n+1)}Y = \\begin{pmatrix} y^{(1)}\\\\ y^{(2)}\\\\...\\\\y^{(m)} \\end{pmatrix}_{m\\times 1}\\Theta = \\begin{pmatrix}\\Theta_{0}\\\\\\Theta_{1}\\\\...\\\\\\Theta_{n}\\end{pmatrix}_{(n+1)\\times 1}++$
+$1\\\\x_{1}^{(i)}\\\\...\\\\x_{n}^{(i)}\\end{pmatrix}_{(n+1)\\times 1}X = \\begin{pmatrix} x^{(1)}^{T}\\\\(x^{(2)})^{T}\\\\...\\\\(x^{(m)})^{T}\\end{pmatrix}_{m\\times(n+1)}Y = \\begin{pmatrix} y^{(1)}\\\\ y^{(2)}\\\\...\\\\y^{(m)} \\end{pmatrix}_{m\\times 1}\\Theta = \\begin{pmatrix}\\Theta_{0}\\\\\\Theta_{1}\\\\...\\\\\\Theta_{n}\\end{pmatrix}_{(n+1)\\times 1}++$
 
 Logo, para achar o vetor _theta_ faz a seguinte multiplicação de matriz:
 
