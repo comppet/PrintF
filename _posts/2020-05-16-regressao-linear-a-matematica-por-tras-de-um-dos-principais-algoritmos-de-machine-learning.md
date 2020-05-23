@@ -59,7 +59,7 @@ Figura 2: Representação gráfica da [função h](https://www.coursera.org/lear
 
 Para mensurar o quão precisa esta nossa função de hipótese, utilizamos a Cost Function:
 
-$J\(\\Theta) = \\frac{1}{2*m}* \\sum_{i=1}^{m}\\left ( h_{\\Theta}\\left ( x^{(i)} \\right ) _{(i)} \\right )^{2}$
+$J(\\Theta) = \\frac{1}{2_m}_ \\sum_{_=1}{m\\left ( h_{\\Theta}\\left ( x^{(i} \\right ) _{(i)} \\_right )^{2}$
 
 Nosso objetivo é achar os melhores parâmetros $_\\Theta$, tal que $J(\\Theta)$ seja o menor possível.
 
@@ -91,30 +91,30 @@ Sempre que houver apenas _n_ variáveis de entrada e 1 variável de resposta usa
 
 É definida da seguinte forma:
 
-$h*{\\Theta}\\left ( X \\right ) = \\Theta*{0} + \\Theta*{1}\*x*{1}^{(i)} + \\Theta*{2}\*x*{2}^{(i)} + ... + \\Theta*{n}\*x*{n}^{(i)}$
+$h*{\\Theta}\\left ( X \\right ) = \\Theta*{0} + \\Theta*{1}*x*{1}^{(i)} + \\Theta*{2}*x*{2}^{(i)} + ... + \\Theta*{n}*x*{n}^{(i)}$
 
 Observa-se que a quantidade de parâmetros _theta_ depende da quantidade de _x’s_.
 
 Sua forma matricial é:
 
 $$
-h\_{\\Theta}\\left ( X \\right ) =
+h_{\\Theta}\\left ( X \\right ) =
 
 \\begin{bmatrix}
 
-\\Theta*{0} & \\Theta*{1} & ... & \\Theta\_{n}
+\\Theta*{0} & \\Theta*{1} & ... & \\Theta_{n}
 
 \\end{bmatrix}
 
 \\begin{bmatrix}
 
-x\_{0}\\\\
+x_{0}\\\\
 
-x\_{1}\\\\
+x_{1}\\\\
 
 ...\\\\
 
-x\_{n}
+x_{n}
 
 \\end{bmatrix}
 
@@ -163,7 +163,7 @@ $$
 $$
 
 $$
-\frac{\partial}{\partial\Theta_{j}} \frac{1}{2_m} *\ sum_{i=i}^{m} (h_{\Theta}(x^{(i)})-y^{(i)})^{2} = \frac{1}{m}_\sum_{i=1}^{m} (h_{\Theta}(x^{(i)})-y^{(i)})* x_{j}^{(i)}, 1\leq j\leq n
+\\frac{\\partial}{\\partial\\Theta_{j}} \\frac{1}{2_m} _\\ sum_{i=i}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)})^{2} = \\frac{1}{m}\\sum_{i=1}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)}) x_{j}^{(i)}, 1\\leq j\\leq n
 $$
 
 ##
