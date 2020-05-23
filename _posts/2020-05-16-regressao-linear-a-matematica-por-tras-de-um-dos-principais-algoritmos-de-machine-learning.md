@@ -10,13 +10,13 @@ introduction: Como funciona a matemática por trás do algoritmo de regressão l
 main-class: comp
 color: "#265AA9 "
 tags:
-  - Comp
-  - Math
-  - ML
+- Comp
+- Math
+- ML
 categories: Comp
-twitter_text: ""
----
+twitter_text: ''
 
+---
 # **A matemática por trás de um dos principais algoritmos de Machine Learning**
 
 Machine Learning (ML), ou Aprendizado de Máquina, é um termo do momento. O mundo está passando por grandes transformações, mudando de forma rápida e brusca. Coisas inimagináveis há 5 ou 10 anos atrás são corriqueiras nos dias de hoje.
@@ -59,7 +59,7 @@ Figura 2: Representação gráfica da [função h](https://www.coursera.org/lear
 
 Para mensurar o quão precisa esta nossa função de hipótese, utilizamos a Cost Function:
 
-$J(\\Theta) = \\frac{1}{2_m}_ \\sum_{_=1}{m\\left ( h_{\\Theta}\\left ( x^{(i} \\right ) _{(i)} \\_right )^{2}$
+$J(\\\\Theta) = \\frac{1}{2_m}_ \\sum_{_=1}{m\\left ( h_{\\Theta}\\left ( x^{(i} \\right ) _{(i)} \\_right )^{2}$
 
 Nosso objetivo é achar os melhores parâmetros $_\\Theta$, tal que $J(\\Theta)$ seja o menor possível.
 
