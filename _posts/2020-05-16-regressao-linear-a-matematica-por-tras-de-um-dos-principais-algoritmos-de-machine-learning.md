@@ -10,13 +10,13 @@ introduction: Como funciona a matemática por trás do algoritmo de regressão l
 main-class: comp
 color: "#265AA9 "
 tags:
-- Comp
-- Math
-- ML
+  - Comp
+  - Math
+  - ML
 categories: Comp
-twitter_text: ''
-
+twitter_text: ""
 ---
+
 # **A matemática por trás de um dos principais algoritmos de Machine Learning**
 
 Machine Learning (ML), ou Aprendizado de Máquina, é um termo do momento. O mundo está passando por grandes transformações, mudando de forma rápida e brusca. Coisas inimagináveis há 5 ou 10 anos atrás são corriqueiras nos dias de hoje.
@@ -75,7 +75,7 @@ Sempre que houver apenas 1 variável de entrada e 1 variável de resposta usarem
 
 ### Hipótese:
 
-Como já explicado acima, usaremos a Função de Hipótese para criar a linha de regressão igual mostrado na Figura 1. A função _h_ é definida como: $h_{\\Theta} = \\Theta _{0} + \\Theta _{1}*x$. Veja, essa equação sempre criará uma reta, sendo $\\Theta _{0}$ o coeficiente linear e o $\\Theta _{1}$ o coeficiente angular.
+Como já explicado acima, usaremos a Função de Hipótese para criar a linha de regressão igual mostrado na Figura 1. A função _h_ é definida como: $h_{\\Theta} = \\Theta_{0} + \\Theta _{1}*x$. Veja, essa equação sempre criará uma reta, sendo $\\Theta_{0}$ o coeficiente linear e o $\\Theta _{1}$ o coeficiente angular.
 
 ### Cost Function:
 
@@ -91,7 +91,7 @@ Sempre que houver apenas _n_ variáveis de entrada e 1 variável de resposta usa
 
 É definida da seguinte forma:
 
-$h*{\\Theta}\\left ( X \\right ) = \\Theta*{0} + \\Theta*{1}*x*{1}^{(i)} + \\Theta*{2}*x*{2}^{(i)} + ... + \\Theta*{n}*x*{n}^{(i)}$
+$$h*{\\Theta}\\left ( X \\right ) = \\Theta*{0} + \\Theta*{1}*x*{1}^{(i)} + \\Theta*{2}*x*{2}^{(i)} + ... + \\Theta*{n}*x*{n}^{(i)}$$
 
 Observa-se que a quantidade de parâmetros _theta_ depende da quantidade de _x’s_.
 
@@ -128,7 +128,7 @@ Note que não importa quantos _thetas_ ou quantos _x’s_ tem, a multiplicação
 ### Cost Function:
 
 Já na função de custo, não há grandes alterações. Ela é definida:
-$J(\\Theta_{0}, \\Theta_{1}, \\Theta_{2}, ..., \\Theta_{n}) = J(\\Theta^{T}) = \\frac{1}{2*m} * \\sum_{i=1}^{m}\\left ( h_{\\Theta}\\left ( x^{(i)} \\right ) - _{(i)} \\right )^{2}_$, onde o T sobrescrito ao _theta_ representa a transposta.
+$J(\\Theta_{0}, \\Theta_{1}, \\Theta_{2}, ..., \\Theta_{n}) = J(\\Theta^{T}) = \\frac{1}{2*m}* \\sum_{i=1}^{m}\\left ( h_{\\Theta}\\left ( x^{(i)} \\right ) - _{(i)} \\right )^{2}_$, onde o T sobrescrito ao _theta_ representa a transposta.
 
 ## Gradient Descent (GD)
 
@@ -162,7 +162,6 @@ $\\frac{\\partial}{\\partial\\Theta_{0}} \\frac{1}{2_m} * \\sum_{i=i}^{m} (h_{\\
 
 $\\frac{\\partial}{\\partial\\Theta_{j}} \\frac{1}{2_m} _\\ sum_{i=i}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)})^{2} = \\frac{1}{m}\\sum_{i=1}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)}) x_{j}^{(i)}, 1\\leq j\\leq n$
 
-
 Feature Normalize:
 
 Para otimizar o algoritmo, podemos colocar os valores de entrada em um intervalo parecido (normalmente entre 0 e 1). Assim, o _theta_ chega mais rápido ao mínimo. Lembre-se, o intervalo não pode ser muito grande nem muito pequeno.
@@ -172,7 +171,6 @@ Realize a seguinte operação para fazer a normalização:
 $$novoX^{(i)} = \frac{x^{(i)}-\mu_{1} }{\sigma_{1}}$$
 
 Onde, $novoX^{(i)}$ é o novo _x_, $\sigma_{1}$ é o desvio padrão, $\mu_{1}$ é a média e $x^{(i)}$ é o antigo _x_.
-
 
 Normal Equation (NE):
 
@@ -246,3 +244,4 @@ O que mostrei aqui é apenas a ponta do iceberg. Há inúmeros algoritmos de mac
 ## Bônus:
 
 Caso esteja curioso para saber como ficariam esses algoritmos usando a linguagem de programação Octave, visite o meu [repositório](https://github.com/salomaoalves/MachineLearning).
+$$
