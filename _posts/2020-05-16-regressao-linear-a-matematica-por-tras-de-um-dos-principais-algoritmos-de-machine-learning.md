@@ -59,7 +59,7 @@ Figura 2: Representação gráfica da [função h](https://www.coursera.org/lear
 
 Para mensurar o quão precisa esta nossa função de hipótese, utilizamos a Cost Function:
 
-$J(\\Theta) = \\frac{1}{2*m}* \\sum_{i=1}^{m}\\left ( h_{\\Theta}\\left ( x^{(i)} \\right ) _{(i)} \\right )^{2}$
+$J\(\\Theta) = \\frac{1}{2*m}* \\sum_{i=1}^{m}\\left ( h_{\\Theta}\\left ( x^{(i)} \\right ) _{(i)} \\right )^{2}$
 
 Nosso objetivo é achar os melhores parâmetros $_\\Theta$, tal que $J(\\Theta)$ seja o menor possível.
 
@@ -81,9 +81,7 @@ Como já explicado acima, usaremos a Função de Hipótese para criar a linha de
 
 Já a função de custo é definida da seguinte forma:
 
-$$
-J(\\Theta_{0}, \\Theta_{1}) = \\frac{1}{2*m} * \\sum_{i=1}^{m}\\left ( h_{\\Theta}\\left ( x^{(i)} \\right ) - _{(i)} \\right )^{2}
-$$
+$J(\\Theta_{0}, \\Theta_{1}) = \\frac{1}{2*m} * \\sum_{i=1}^{m}\\left ( h_{\\Theta}\\left ( x^{(i)} \\right ) - _{(i)} \\right )^{2}$
 
 ## Regressão Linear Múltipla
 
@@ -93,9 +91,7 @@ Sempre que houver apenas _n_ variáveis de entrada e 1 variável de resposta usa
 
 É definida da seguinte forma:
 
-$$
-  h*{\\Theta}\\left ( X \\right ) = \\Theta*{0} + \\Theta*{1}\*x*{1}^{(i)} + \\Theta*{2}\*x*{2}^{(i)} + ... + \\Theta*{n}\*x*{n}^{(i)}
-$$
+$h*{\\Theta}\\left ( X \\right ) = \\Theta*{0} + \\Theta*{1}\*x*{1}^{(i)} + \\Theta*{2}\*x*{2}^{(i)} + ... + \\Theta*{n}\*x*{n}^{(i)}$
 
 Observa-se que a quantidade de parâmetros _theta_ depende da quantidade de _x’s_.
 
@@ -163,11 +159,11 @@ Responsável pelo tamanho do passo quando atualizar os _thetas_, quanto maior fo
 ### Derivadas parciais:
 
 $$
-\\frac{\\partial}{\\partial\\Theta_{0}} \\frac{1}{2_m} * \\sum_{i=i}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)})^{2} = \\frac{1}{m}_\\sum_{i=1}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)})
+\frac{\partial}{\partial\Theta_{0}} \frac{1}{2_m} * \sum_{i=i}^{m} (h_{\Theta}(x^{(i)})-y^{(i)})^{2} = \frac{1}{m}_\sum_{i=1}^{m} (h_{\Theta}(x^{(i)})-y^{(i)})
 $$
 
 $$
-\\frac{\\partial}{\\partial\\Theta_{j}} \\frac{1}{2_m} *\\ sum_{i=i}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)})^{2} = \\frac{1}{m}_\\sum_{i=1}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)})* x_{j}^{(i)}, 1\\leq j\\leq n
+\frac{\partial}{\partial\Theta_{j}} \frac{1}{2_m} *\ sum_{i=i}^{m} (h_{\Theta}(x^{(i)})-y^{(i)})^{2} = \frac{1}{m}_\sum_{i=1}^{m} (h_{\Theta}(x^{(i)})-y^{(i)})* x_{j}^{(i)}, 1\leq j\leq n
 $$
 
 ##
@@ -178,9 +174,9 @@ Para otimizar o algoritmo, podemos colocar os valores de entrada em um intervalo
 
 Realize a seguinte operação para fazer a normalização:
 
-$$novoX^{(i)} = \\frac{x^{(i)}-\\mu_{1} }{\\sigma_{1}}$$
+$$novoX^{(i)} = \frac{x^{(i)}-\mu_{1} }{\sigma_{1}}$$
 
-Onde, $novoX^{(i)}$ é o novo _x_, $\\sigma_{1}$ é o desvio padrão, $\\mu_{1}$ é a média e $x^{(i)}$ é o antigo _x_.
+Onde, $novoX^{(i)}$ é o novo _x_, $\sigma_{1}$ é o desvio padrão, $\mu_{1}$ é a média e $x^{(i)}$ é o antigo _x_.
 
 ##
 
