@@ -10,13 +10,13 @@ introduction: Como funciona a matemática por trás do algoritmo de regressão l
 main-class: comp
 color: "#265AA9 "
 tags:
-  - Comp
-  - Math
-  - ML
+- Comp
+- Math
+- ML
 categories: Comp
-twitter_text: ""
----
+twitter_text: ''
 
+---
 # **A matemática por trás de um dos principais algoritmos de Machine Learning**
 
 Machine Learning (ML), ou Aprendizado de Máquina, é um termo do momento. O mundo está passando por grandes transformações, mudando de forma rápida e brusca. Coisas inimagináveis há 5 ou 10 anos atrás são corriqueiras nos dias de hoje.
@@ -59,7 +59,8 @@ Figura 2: Representação gráfica da [função h](https://www.coursera.org/lear
 
 Para mensurar o quão precisa esta nossa função de hipótese, utilizamos a Cost Function:
 
-$J(\\Theta) = \\frac{1}{2*m}* \\sum_{i=1}^{m}\\left ( h_{\\Theta}\\left ( x^{(i)} \\right ) _{(i)} \\right )^{2}$
+$J(\\Theta) = \\frac{1}{2_m}_ \\sum_{_=1}{m\\left ( h_{\\Theta}\\left ( x^{(i} \\right ) _{(i)} \\_right )^{2}$
+
 
 Nosso objetivo é achar os melhores parâmetros $_\\Theta$, tal que $J(\\Theta)$ seja o menor possível.
 
@@ -81,9 +82,7 @@ Como já explicado acima, usaremos a Função de Hipótese para criar a linha de
 
 Já a função de custo é definida da seguinte forma:
 
-$$
-J(\\Theta_{0}, \\Theta_{1}) = \\frac{1}{2*m} * \\sum_{i=1}^{m}\\left ( h_{\\Theta}\\left ( x^{(i)} \\right ) - _{(i)} \\right )^{2}
-$$
+$J(\\Theta_{0}, \\Theta_{1}) = \\frac{1}{2*m} * \\sum_{i=1}^{m}\\left ( h_{\\Theta}\\left ( x^{(i)} \\right ) - _{(i)} \\right )^{2}$
 
 ## Regressão Linear Múltipla
 
@@ -93,32 +92,30 @@ Sempre que houver apenas _n_ variáveis de entrada e 1 variável de resposta usa
 
 É definida da seguinte forma:
 
-$$
-  h*{\\Theta}\\left ( X \\right ) = \\Theta*{0} + \\Theta*{1}\*x*{1}^{(i)} + \\Theta*{2}\*x*{2}^{(i)} + ... + \\Theta*{n}\*x*{n}^{(i)}
-$$
+$h*{\\Theta}\\left ( X \\right ) = \\Theta*{0} + \\Theta*{1}*x*{1}^{(i)} + \\Theta*{2}*x*{2}^{(i)} + ... + \\Theta*{n}*x*{n}^{(i)}$
 
 Observa-se que a quantidade de parâmetros _theta_ depende da quantidade de _x’s_.
 
 Sua forma matricial é:
 
 $$
-h\_{\\Theta}\\left ( X \\right ) =
+h_{\\Theta}\\left ( X \\right ) =
 
 \\begin{bmatrix}
 
-\\Theta*{0} & \\Theta*{1} & ... & \\Theta\_{n}
+\\Theta*{0} & \\Theta*{1} & ... & \\Theta_{n}
 
 \\end{bmatrix}
 
 \\begin{bmatrix}
 
-x\_{0}\\\\
+x_{0}\\\\
 
-x\_{1}\\\\
+x_{1}\\\\
 
 ...\\\\
 
-x\_{n}
+x_{n}
 
 \\end{bmatrix}
 
@@ -167,10 +164,10 @@ $$
 $$
 
 $$
-\\frac{\\partial}{\\partial\\Theta_{j}} \\frac{1}{2_m} *\\ sum_{i=i}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)})^{2} = \\frac{1}{m}_\\sum_{i=1}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)})* x_{j}^{(i)}, 1\\leq j\\leq n
+\\frac{\\partial}{\\partial\\Theta_{j}} \\frac{1}{2_m} _\\ sum_{i=i}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)})^{2} = \\frac{1}{m}\\sum_{i=1}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)}) x_{j}^{(i)}, 1\\leq j\\leq n
 $$
 
-##
+## 
 
 Feature Normalize:
 
@@ -182,15 +179,15 @@ $$novoX^{(i)} = \\frac{x^{(i)}-\\mu_{1} }{\\sigma_{1}}$$
 
 Onde, $novoX^{(i)}$ é o novo _x_, $\\sigma_{1}$ é o desvio padrão, $\\mu_{1}$ é a média e $x^{(i)}$ é o antigo _x_.
 
-##
+## 
 
 Normal Equation (NE):
 
 Outro método para achar o mínimo de J, porém este é um método não iterativo, portanto, não deve aplicar Feature Normalize. Seja a seguinte situação:
 
-- m exemplos: $(x^{(1)}, y^{(1)}), ..., (x^{(m)}, y^{(m)})$
-- n features: $(x_{1}, x_{2}, ..., x_{n})$
-- n+1 thetas: $(\\Theta_{0}, \\Theta_{1}, \\Theta_{2}, ..., \\Theta_{n})$
+* m exemplos: $(x^{(1)}, y^{(1)}), ..., (x^{(m)}, y^{(m)})$
+* n features: $(x_{1}, x_{2}, ..., x_{n})$
+* n+1 thetas: $(\\Theta_{0}, \\Theta_{1}, \\Theta_{2}, ..., \\Theta_{n})$
 
 Assim, formamos as seguintes matrizes:
 
