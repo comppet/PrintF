@@ -91,13 +91,13 @@ Sempre que houver apenas _n_ variáveis de entrada e 1 variável de resposta usa
 
 É definida da seguinte forma:
 
-$h*{\\Theta}\\left ( X \\right ) = \\Theta*{0} + \\Theta*{1}*x*{1}^{(i)} + \\Theta*{2}*x*{2}^{(i)} + ... + \\Theta*{n}*x*{n}^{(i)}$
+$h*{\Theta}\left ( X \right ) = \Theta*{0} + \Theta*{1}*x*{1}^{(i)} + \Theta*{2}*x*{2}^{(i)} + ... + \Theta*{n}*x*{n}^{(i)}$
 
 Observa-se que a quantidade de parâmetros _theta_ depende da quantidade de _x’s_.
 
 Sua forma matricial é:
 
-$h_{\\Theta}\\left ( X \\right ) = \\begin{bmatrix} \\Theta*{0} & \\Theta*{1} & ... & \\Theta_{n} \\end{bmatrix} \\begin{bmatrix} x_{0}\\\\ x_{1}\\\\..\\\\x_{n} \\e{bmatrix}= \\Theta^{T}x$
+$h_{\\\\Theta}\\\\left ( X \\\\right ) = \\\\begin{bmatrix} \\\\Theta*{0} & \\\\Theta*{1} & ... & \\\\Theta_{n} \\\\end{bmatrix} \\\\begin{bmatrix} x_{0}\\\\ x_{1}\\\\..\\\\x_{n} \\\\e{bmatrix}= \\\\Theta^{T}x$
 
 , onde $x_{0}=1$
 
