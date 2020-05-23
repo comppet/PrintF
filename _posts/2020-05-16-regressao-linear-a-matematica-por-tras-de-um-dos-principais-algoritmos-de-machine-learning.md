@@ -10,13 +10,13 @@ introduction: Como funciona a matemática por trás do algoritmo de regressão l
 main-class: comp
 color: "#265AA9 "
 tags:
-  - Comp
-  - Math
-  - ML
+- Comp
+- Math
+- ML
 categories: Comp
-twitter_text: ""
----
+twitter_text: ''
 
+---
 # **A matemática por trás de um dos principais algoritmos de Machine Learning**
 
 Machine Learning (ML), ou Aprendizado de Máquina, é um termo do momento. O mundo está passando por grandes transformações, mudando de forma rápida e brusca. Coisas inimagináveis há 5 ou 10 anos atrás são corriqueiras nos dias de hoje.
@@ -91,13 +91,13 @@ Sempre que houver apenas _n_ variáveis de entrada e 1 variável de resposta usa
 
 É definida da seguinte forma:
 
-$h*{\\Theta}\\left ( X \\right ) = \\Theta*{0} + \\Theta*{1}*x*{1}^{(i)} + \\Theta*{2}*x*{2}^{(i)} + ... + \\Theta*{n}*x*{n}^{(i)}$
+$$h*{\\Theta}\\left ( X \\right ) = \\Theta*{0} + \\Theta*{1}*x*{1}^{(i)} + \\Theta*{2}*x*{2}^{(i)} + ... + \\Theta*{n}*x*{n}^{(i)}$$
 
 Observa-se que a quantidade de parâmetros _theta_ depende da quantidade de _x’s_.
 
 Sua forma matricial é:
 
-$h_{\\Theta}\\left ( X \\right ) = \\begin{bmatrix} \\Theta*{0} & \\Theta*{1} & ... & \\Theta_{n} \\end{bmatrix} \\begin{bmatrix} x_{0}\\\\ x_{1}\\\\..\\\\x_{n} \\e{bmatrix}= \\Theta^{T}x$
+$$h_{\\Theta}\\left ( X \\right ) = \\begin{bmatrix} \\Theta*{0} & \\Theta*{1} & ... & \\Theta_{n} \\end{bmatrix} \\begin{bmatrix} x_{0}\\\\ x_{1}\\\\..\\\\x_{n} \\e{bmatrix}= \\Theta^{T}x$$
 
 , onde $x_{0}=1$
 
