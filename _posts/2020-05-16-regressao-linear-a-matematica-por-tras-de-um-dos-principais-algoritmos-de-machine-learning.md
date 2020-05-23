@@ -10,13 +10,13 @@ introduction: Como funciona a matemática por trás do algoritmo de regressão l
 main-class: comp
 color: "#265AA9 "
 tags:
-  - Comp
-  - Math
-  - ML
+- Comp
+- Math
+- ML
 categories: Comp
-twitter_text: ""
----
+twitter_text: ''
 
+---
 # **A matemática por trás de um dos principais algoritmos de Machine Learning**
 
 Machine Learning (ML), ou Aprendizado de Máquina, é um termo do momento. O mundo está passando por grandes transformações, mudando de forma rápida e brusca. Coisas inimagináveis há 5 ou 10 anos atrás são corriqueiras nos dias de hoje.
@@ -86,6 +86,7 @@ $J(\\Theta_{0}, \\Theta_{1}) = \\frac{1}{2*m} * \\sum_{i=1}^{m}\\left ( h_{\\The
 ## Regressão Linear Múltipla
 
 Sempre que houver apenas _n_ variáveis de entrada e 1 variável de resposta usaremos esse tipo de regressão.
+<<<<<<< HEAD
 
 ### Hipótese:
 
@@ -223,3 +224,5 @@ O que mostrei aqui é apenas a ponta do iceberg. Há inúmeros algoritmos de mac
 ## Bônus:
 
 Caso esteja curioso para saber como ficariam esses algoritmos usando a linguagem de programação Octave, visite o meu [repositório](https://github.com/salomaoalves/MachineLearning).
+=======
+>>>>>>> dece78b526eae76c00d9ece9858a2966d6bdcfc7
