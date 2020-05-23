@@ -136,9 +136,9 @@ Responsável pelo tamanho do passo quando atualizar os _thetas_, quanto maior fo
 
 ### Derivadas parciais:
 
-$\\frac{\\partial}{\\partial\\Theta_{0}} \\frac{1}{2_m} * \\sum_{i=i}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)})^{2} = \\frac{1}{m}_\\sum_{i=1}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)})$
+$$\\frac{\\partial}{\\partial\\Theta_{0}} \\frac{1}{2_m} * \\sum_{i=i}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)})^{2} = \\frac{1}{m}_\\sum_{i=1}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)})$$
 
-$\\frac{\\partial}{\\partial\\Theta_{j}} \\frac{1}{2_m} _\\ sum_{i=i}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)})^{2} = \\frac{1}{m}\\sum_{i=1}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)}) x_{j}^{(i)}, 1\\leq j\\leq n$
+$$\\frac{\\partial}{\\partial\\Theta_{j}} \\frac{1}{2_m} _\\ sum_{i=i}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)})^{2} = \\frac{1}{m}\\sum_{i=1}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)}) x_{j}^{(i)}, 1\\leq j\\leq n$$
 
 Feature Normalize:
 
@@ -205,7 +205,8 @@ y^{(m)}
 
 \\Theta_{n}
 
-\\end{pmatrix}_{(n+1)\\times 1}$$
+\\end{pmatrix}_{(n+1)\\times 1}
+$$
 
 Logo, para achar o vetor _theta_ faz a seguinte multiplicação de matriz:
 
@@ -222,4 +223,3 @@ O que mostrei aqui é apenas a ponta do iceberg. Há inúmeros algoritmos de mac
 ## Bônus:
 
 Caso esteja curioso para saber como ficariam esses algoritmos usando a linguagem de programação Octave, visite o meu [repositório](https://github.com/salomaoalves/MachineLearning).
-$$
