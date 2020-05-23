@@ -158,15 +158,10 @@ Responsável pelo tamanho do passo quando atualizar os _thetas_, quanto maior fo
 
 ### Derivadas parciais:
 
-$$
-\frac{\partial}{\partial\Theta_{0}} \frac{1}{2_m} * \sum_{i=i}^{m} (h_{\Theta}(x^{(i)})-y^{(i)})^{2} = \frac{1}{m}_\sum_{i=1}^{m} (h_{\Theta}(x^{(i)})-y^{(i)})
-$$
+$\\frac{\\partial}{\\partial\\Theta_{0}} \\frac{1}{2_m} * \\sum_{i=i}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)})^{2} = \\frac{1}{m}_\\sum_{i=1}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)})$
 
-$$
-\\frac{\\partial}{\\partial\\Theta_{j}} \\frac{1}{2_m} _\\ sum_{i=i}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)})^{2} = \\frac{1}{m}\\sum_{i=1}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)}) x_{j}^{(i)}, 1\\leq j\\leq n
-$$
+$\\frac{\\partial}{\\partial\\Theta_{j}} \\frac{1}{2_m} _\\ sum_{i=i}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)})^{2} = \\frac{1}{m}\\sum_{i=1}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)}) x_{j}^{(i)}, 1\\leq j\\leq n$
 
-##
 
 Feature Normalize:
 
@@ -178,7 +173,6 @@ $$novoX^{(i)} = \frac{x^{(i)}-\mu_{1} }{\sigma_{1}}$$
 
 Onde, $novoX^{(i)}$ é o novo _x_, $\sigma_{1}$ é o desvio padrão, $\mu_{1}$ é a média e $x^{(i)}$ é o antigo _x_.
 
-##
 
 Normal Equation (NE):
 
@@ -252,71 +246,3 @@ O que mostrei aqui é apenas a ponta do iceberg. Há inúmeros algoritmos de mac
 ## Bônus:
 
 Caso esteja curioso para saber como ficariam esses algoritmos usando a linguagem de programação Octave, visite o meu [repositório](https://github.com/salomaoalves/MachineLearning).
-
-Teste:
-
-Let's test some inline math $x$, $y$, $x_1$, $y_1$.
-
-Now a inline math with special character: $|\\psi\\rangle$, $x'$, $x^\\*$.
-
-Test a display math:
-$$
-
-|\\psi_1\\rangle = a|0\\rangle + b|1\\rangle
-
-$$
-Is it O.K.?
-
-Test a display math with equation number:
-$$
-
-\\begin{equation}
-|\\psi_1\\rangle = a|0\\rangle + b|1\\rangle
-\\end{equation}
-
-$$
-Is it O.K.?
-
-Test a display math with equation number:
-$$
-
-\\begin{align}
-|\\psi_1\\rangle &= a|0\\rangle + b|1\\rangle \\\\\\\\
-|\\psi_2\\rangle &= c|0\\rangle + d|1\\rangle
-\\end{align}
-
-$$
-Is it O.K.?
-
-And test a display math without equaltion number:
-$$
-
-\\begin{align\\_}
-|\\psi_1\\rangle &= a|0\\rangle + b|1\\rangle \\\\\\\\
-|\\psi_2\\rangle &= c|0\\rangle + d|1\\rangle
-\\end{align\\_}
-
-$$
-Is it O.K.?
-
-Test a display math with equation number:
-$$
-
-\\begin{align}
-|\\psi_1\\rangle &= a|0\\rangle + b|1\\rangle \\\\\\\\
-|\\psi_2\\rangle &= c|0\\rangle + d|1\\rangle
-\\end{align}
-
-$$
-Is it O.K.?
-
-And test a display math without equaltion number:
-$$
-
-\\begin{align\\_}
-|\\psi_1\\rangle &= a|0\\rangle + b|1\\rangle \\\\\\\\
-|\\psi_2\\rangle &= c|0\\rangle + d|1\\rangle
-\\end{align\\_}
-
-$$
-$$
