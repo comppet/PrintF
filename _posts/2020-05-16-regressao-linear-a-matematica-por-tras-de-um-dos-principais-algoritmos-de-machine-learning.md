@@ -59,7 +59,7 @@ Figura 2: Representação gráfica da [função h](https://www.coursera.org/lear
 
 Para mensurar o quão precisa esta nossa função de hipótese, utilizamos a Cost Function:
 
-$J(\\Theta) = \\frac{1}{2_m}_ \\sum_{_=1}{m\\left ( h_{\\Theta}\\left ( x^{(i} \\right )_{(i)} \\_right )^{2}$
+$J(\\Theta) = \\frac{1}{2_m}*\\sum_{i=1}^{m}(h_{\\Theta}( x^{(i})-y^{(i)})^{2}$
 
 Nosso objetivo é achar os melhores parâmetros $\\Theta$, tal que $J(\\Theta)$ seja o menor possível.
 
@@ -75,13 +75,13 @@ Sempre que houver apenas 1 variável de entrada e 1 variável de resposta usarem
 
 ### Hipótese:
 
-Como já explicado acima, usaremos a Função de Hipótese para criar a linha de regressão igual mostrado na Figura 1. A função _h_ é definida como: $h_{\\Theta} = \\Theta_{0} + \\Theta_{1}_* x_$. Veja, essa equação sempre criará uma reta, sendo $\\Theta_{0}$ o coeficiente linear e o $\\Theta_{1}$ o coeficiente angular.
+Como já explicado acima, usaremos a Função de Hipótese para criar a linha de regressão igual mostrado na Figura 1. A função _h_ é definida como: $h_{\\Theta} = \\Theta_{0} + \\Theta_{1}* x$. Veja, essa equação sempre criará uma reta, sendo $\\Theta_{0}$ o coeficiente linear e o $\\Theta_{1}$ o coeficiente angular.
 
 ### Cost Function:
 
 Já a função de custo é definida da seguinte forma: 
 
-$J(\\Theta_{0}, \\Theta_{1}) = \\frac{1}{2*m} * \\sum_{i=1}^{m}\\left ( h_{\\Theta}\\left ( x^{(i)} \\right ) - _{(i)} \\right )^{2}$
+$J(\\Theta_{0}, \\Theta_{1}) = \\frac{1}{2*m} * \\sum_{i=1}^{m}(h_{\\Theta}(x^{(i)})-y^{(i)})^{2}$
 
 ## Regressão Linear Múltipla
 
@@ -91,13 +91,13 @@ Sempre que houver apenas _n_ variáveis de entrada e 1 variável de resposta usa
 
 É definida da seguinte forma:
 
-$h*{\\Theta}\\left ( X \\right ) = \\Theta*{0} + \\Theta*{1}_x_{1}^{(i)} + \\Theta*{2}_x_{2}^{(i)} + ... + \\Theta*{n}_x_{n}^{(i)}$
+$h_{\\Theta}(X) = \\Theta_{0} + \\Theta_{1}x_{1}^{(i)} + \\Theta_{2}x_{2}^{(i)} + ... + \\Theta_{n}x_{n}^{(i)}$
 
 Observa-se que a quantidade de parâmetros _theta_ depende da quantidade de _x’s_.
 
 Sua forma matricial é:
 
-$h_{\\Theta}\\left ( X \\right ) = \\begin{bmatrix} \\Theta*{0} & \\Theta*{1} & ... & \\Theta_{n} \\end{bmatrix} \\begin{bmatrix} x_{0}\\\\ x_{1}\\\\..\\\\x_{n} \\e{bmatrix}= \\Theta^{T}x$
+$h_{\\Theta}(X) = \\begin{bmatrix} \\Theta_{0} & \\Theta_{1} & ... & \\Theta_{n} \\end{bmatrix} \\begin{bmatrix} x_{0}\\\\ x_{1}\\\\...\\\\x_{n} \\end{bmatrix}= \\Theta^{T}x$
 
 , onde $x_{0}=1$
 
@@ -106,7 +106,7 @@ Note que não importa quantos _thetas_ ou quantos _x’s_ tem, a multiplicação
 ### Cost Function:
 
 Já na função de custo, não há grandes alterações. Ela é definida:
-$J(\\Theta_{0}, \\Theta_{1}, \\Theta_{2}, ..., \\Theta_{n}) = J(\\Theta^{T}) = \\frac{1}{2_m}_ \\sum_{i=1}^{m}\\left ( h_{\\Theta}\\left ( x^{(i)} \\right ) - _{(i)} \\right )^{2}_$, onde o T sobrescrito ao _theta_ representa a transposta.
+$J(\\Theta_{0},\\Theta_{1},\\Theta_{2},...,\\Theta_{n}) = J(\\Theta^{T}) = \\frac{1}{2m} \\sum_{i=1}^{m}(h_{\\Theta}(x^{(i)})-y^{(i)})^{2}$, onde o T sobrescrito ao _theta_ representa a transposta.
 
 ## Gradient Descent (GD)
 
@@ -136,9 +136,9 @@ Responsável pelo tamanho do passo quando atualizar os _thetas_, quanto maior fo
 
 ### Derivadas parciais:
 
-$\\frac{\\partial}{\\partial\\Theta_{0}} \\frac{1}{2_m} * \\sum_{i=i}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)})^{2} = \\frac{1}{m}_\\sum_{i=1}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)})$
+$\\frac{\\partial}{\\partial\\Theta_{0}} \\frac{1}{2_m} * \\sum_{i=1}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)})^{2} = \\frac{1}{m}\\sum_{i=1}^{m}(h_{\\Theta}(x^{(i)})-y^{(i)})
 
-$\\frac{\\partial}{\\partial\\Theta_{j}} \\frac{1}{2_m} _\\ sum_{i=i}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)})^{2} = \\frac{1}{m}\\sum_{i=1}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)}) x_{j}^{(i)}, 1\\leq j\\leq n$
+$\\frac{\\partial}{\\partial\\Theta_{j}} \\frac{1}{2m} \\sum_{i=1}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)})^{2} = \\frac{1}{m}\\sum_{i=1}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)}) x_{j}^{(i)}, 1\\leq j\\leq n$
 
 ## Feature Normalize:
 
@@ -208,7 +208,7 @@ _\\Theta__{0}\\\\
 
 \\end{pmatrix}_{(n+1)\\times 1}$
 
-Logo, para achar o vetor _theta_ faz a seguinte multiplicação de matriz: $\\theta = (X^{T}*X)^{-1}*X^{T}*Y$
+Logo, para achar o vetor _theta_ faz a seguinte multiplicação de matriz: $\\Theta = (X^{T}*X)^{-1}*X^{T}*Y$
 
 ## GD vs NE:
 
