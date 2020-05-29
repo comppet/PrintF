@@ -59,7 +59,7 @@ Figura 2: Representação gráfica da [função h](https://www.coursera.org/lear
 
 Para mensurar o quão precisa esta nossa função de hipótese, utilizamos a Cost Function:
 
-$J(\\Theta) = \\frac{1}{2_m}*\\sum_{i=1}^{m}(h_{\\Theta}( x^{(i})-y^{(i)})^{2}$
+$J(\\Theta) = \\frac{1}{2m}*\\sum_{i=1}^{m}(h_{\\Theta}( x^{(i})-y^{(i)})^{2}$
 
 Nosso objetivo é achar os melhores parâmetros $\\Theta$, tal que $J(\\Theta)$ seja o menor possível.
 
