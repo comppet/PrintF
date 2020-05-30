@@ -45,7 +45,7 @@ Dentro de Aprendizado Supervisionado, os algoritmos podem ser de dois tipos: Cla
 
 A notação $x^{i}$ representa os valores de entrada (‘input’ ou variáveis de entrada) e $y^{i}$ representa o valor que se quer prever (‘output’ ou variável target). Os exemplos (training set) sempre serão escritos da seguinte forma: ($x^{i}$, $y^{i}$) tal que $1\\leq i\\leq m$. Portanto, o _i_ é o índice no training set e m é a quantidade de dados que existe. Já o _X_ representa o conjunto dos valores inputs, a mesma lógica vale para _Y_ em relação ao valores outputs.
 
-Em alguns casos, haverá mais de uma variável de entrada. Assim, para representar cada coluna, usaremos seu número subscrito no _x_: $x_{j}^{i}$, sendo que o $1\\leq i\\leq m$ e $1\\leq j\\leq n$. Onde _m_ representa a quantidade de exemplos e _n_ representa a quantidade de variáveis de entrada.
+Em alguns casos, haverá mais de uma variável de entrada. Assim, para representar cada coluna, usaremos seu número subscrito no x: $x_{j}^{i}$, sendo que o $1\\leq i\\leq m$ e $1\\leq j\\leq n$. Onde _m_ representa a quantidade de exemplos e _n_ representa a quantidade de variáveis de entrada.
 
 ### Hipótese:
 
