@@ -136,7 +136,7 @@ Responsável pelo tamanho do passo quando atualizar os _thetas_, quanto maior fo
 
 ### Derivadas parciais:
 
-$\\frac{\\partial}{\\partial\\Theta_{0}} \\frac{1}{2m} \\sum_{i=1}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)})^{2} = \\frac{1}{m}\\sum_{i=1}^{m}(h_{\\Theta}(x^{(i)})-y^{(i)})$
+$\\frac{\\partial}{\\partial\\Theta_{0}} \\frac{1}{2m} \\sum_{i=1}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)})^{2} = \\frac{1}{m}\\sum_{i=1}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)})$
 
 $\\frac{\\partial}{\\partial\\Theta_{j}} \\frac{1}{2m} \\sum_{i=1}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)})^{2} = \\frac{1}{m}\\sum_{i=1}^{m} (h_{\\Theta}(x^{(i)})-y^{(i)}) x_{j}^{(i)}, 1\\leq j\\leq n$
 
