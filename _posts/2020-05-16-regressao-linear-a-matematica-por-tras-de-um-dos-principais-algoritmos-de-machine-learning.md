@@ -150,9 +150,13 @@ Outro método para achar o mínimo de J, porém este é um método não iterativ
 
 Assim, formamos as seguintes matrizes: 
 
-$x^{(i)}=\\begin{pmatrix}1\\\\x_{1}^{(i)}\\\\...\\\\x_{n}^{(i)}\\end{pmatrix}_{(n+1)\\times1}$ $X=\\begin{pmatrix}x^{(1)^{T}}\\\\x^{(2)^{T}}\\\\...\\\\x^{(m)^{T}}\\end{pmatrix}_{m\\times(n+1)}$
+$x^{(i)}=\\begin{pmatrix}1\\\\x_{1}^{(i)}\\\\...\\\\x_{n}^{(i)}\\end{pmatrix}_{(n+1)\\times1}$ 
 
-$Y=\\begin{pmatrix}y^{(1)}\\\\y^{(2)}\\\\...\\\\y^{(m)}\\end{pmatrix}_{m\\times 1}$ $ \\Theta=\\begin{pmatrix}\\Theta_{0} \\\\ \\Theta_{1}\\\\...\\\\ \\Theta_{n}\\end{pmatrix}_{(n+1)\\times 1}$
+$X=\\begin{pmatrix}x^{(1)^{T}}\\\\x^{(2)^{T}}\\\\...\\\\x^{(m)^{T}}\\end{pmatrix}_{m\\times(n+1)}$
+
+$Y=\\begin{pmatrix}y^{(1)}\\\\y^{(2)}\\\\...\\\\y^{(m)}\\end{pmatrix}_{m\\times 1}$ 
+
+$ \\Theta=\\begin{pmatrix}\\Theta_{0} \\\\ \\Theta_{1}\\\\...\\\\ \\Theta_{n}\\end{pmatrix}_{(n+1)\\times 1}$
 
 Logo, para achar o vetor _theta_ faz a seguinte multiplicação de matriz: $\\Theta=(X^{T} * X)^{-1} * X^{T} * Y$
 
