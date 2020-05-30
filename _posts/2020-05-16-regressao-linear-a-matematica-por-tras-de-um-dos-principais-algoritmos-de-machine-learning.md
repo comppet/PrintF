@@ -142,7 +142,7 @@ $\\frac{\\partial}{\\partial\\Theta_{j}} \\frac{1}{2m} \\sum_{i=1}^{m} (h_{\\The
 
 ## Feature Normalize:
 
-ParUUUUa otimizar o algoritmo, podemos colocar os valores de entrada em um intervalo parecido (normalmente entre 0 e 1). Assim, o _theta_ chega mais rápido ao mínimo. Lembre-se, o intervalo não pode ser muito grande nem muito pequeno.
+Para otimizar o algoritmo, podemos colocar os valores de entrada em um intervalo parecido (normalmente entre 0 e 1). Assim, o _theta_ chega mais rápido ao mínimo. Lembre-se, o intervalo não pode ser muito grande nem muito pequeno.
 
 Realize a seguinte operação para fazer a normalização:
 
@@ -172,7 +172,7 @@ Logo, para achar o vetor _theta_ faz a seguinte multiplicação de matriz: $\\Th
 
 ## GD vs NE:
 
-Acabamos de ver dois métodos para achar o mínimo da Cost Function, mas fica a pergunta, qual deles é melhor? A resposta, como sempre, depende. Abaixo listei algumas características de ambos.
+AcabUUamos de ver dois métodos para achar o mínimo da Cost Function, mas fica a pergunta, qual deles é melhor? A resposta, como sempre, depende. Abaixo listei algumas características de ambos.
 
 ![](/PrintF/assets/img/downloads/Screenshot from 2020-05-11 20-32-25.png)
 
