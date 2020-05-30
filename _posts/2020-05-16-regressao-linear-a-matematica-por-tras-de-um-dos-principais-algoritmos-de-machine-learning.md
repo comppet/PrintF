@@ -166,7 +166,7 @@ $X=\\begin{pmatrix}x^{(1)^{T}}\\\\x^{(2)^{T}}\\\\...\\\\x^{(m)^{T}}\\end{pmatrix
 
 $Y=\\begin{pmatrix}y^{(1)}\\\\y^{(2)}\\\\...\\\\y^{(m)}\\end{pmatrix}_{m\\times 1}$
 
-_$_ \\Theta=\\begin{pmatrix}\\Theta_{0}\\\\ \\Theta_{1}\\\\...\\\\ \\Theta_{n}\\end{pmatrix}_{(n+1)\\times 1}$
+$ \\Theta=\\begin{pmatrix}\\Theta_{0} \\\\ \\Theta_{1}\\\\...\\\\ \\Theta_{n}\\end{pmatrix}_{(n+1)\\times 1}$
 
 Logo, para achar o vetor _theta_ faz a seguinte multiplicação de matriz: $\\Theta=(X^{T} * X)^{-1} * X^{T} * Y$
 
