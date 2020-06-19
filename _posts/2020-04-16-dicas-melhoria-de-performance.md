@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: Dicas para melhorar a performance de seu siite ou aplicação web.
+title: Dicas para melhorar a performance de seu site ou aplicação web.
 date: 2020-04-16T03:00:00.000+00:00
 image: "/PrintF/assets/img/"
 description: Melhore a experiência do usuário e aumente as taxas de conversão do seu
@@ -198,4 +198,3 @@ Uma dica interessante é o estudo dos [Web Browsers](https://www.mozilla.org/en-
 Não quis me apegar a biblioteca como React, Vue, Angular ou Svelte. Pensei em compartilhar um conhecimento que pode ser implementado independente da stack de desenvolvimento escolhida.
 
 Obrigado pela leitura!
-
