@@ -61,7 +61,7 @@ A equipe também mostrou diferenças demográficas dentro dos padrões de mobili
 
 Enquanto pessoas de todas as idades passaram mais tempo em casa durante o mês de março, a taxa foi menor entre populações mais jovens. Eles observam que os padrões de idade podem simplesmente ser correlacionados com outros fatores que influenciam a capacidade de ficar em casa. Por exemplo, pessoas com menos de 30 anos podem ter mais chances de trabalhar em setores essenciais e não ter flexibilidade para ficar em casa.
 
-Habitantes das áreas com proporções de renda familiar inferior a US $ 25.000 pareciam ficar mais longe de casa, enquanto famílias com renda entre US $ 50.000 e US$ 100.000 ficavam relativamente mais tempo em casa. Essas tendências refletem a probabilidade de famílias com renda mais alta terem mais flexibilidade para trabalhar em casa, e é mais provável que famílias com renda mais baixa sejam empregadas em indústrias essenciais e também tenham taxas mais altas de perda de emprego.
+Habitantes das áreas com proporções de renda familiar inferior a 25.000 dólares pareciam ficar mais longe de casa, enquanto famílias com renda entre50.000 e 100.000 dólares ficavam relativamente mais tempo em casa. Essas tendências refletem a probabilidade de famílias com renda mais alta terem mais flexibilidade para trabalhar em casa, e é mais provável que famílias com renda mais baixa sejam empregadas em indústrias essenciais e também tenham taxas mais altas de perda de emprego.
 
 #### **Referêcias:**
 
