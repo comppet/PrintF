@@ -5,8 +5,10 @@ date: 2020-08-08 22:45:00 -0300
 author-post: Breno Corrêa
 title: Trabalho Remoto em Tempos de Pandemia
 image: ''
-description: ''
-introduction: ''
+description: Muitos afirmam que seus funcionários são hipereficientes enquanto trabalham
+  em casa. Mas há custos sociais e emocionais na ambição isolada.
+introduction: Muitos afirmam que seus funcionários são hipereficientes enquanto trabalham
+  em casa. Mas há custos sociais e emocionais na ambição isolada.
 main-class: comp
 color: "#265AA9"
 tags:
