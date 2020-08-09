@@ -21,6 +21,8 @@ O home office integral já é uma realidade não só para a área da tecnologia,
 
 Um caso interessante foi o de Nathan Schultz, executivo sênior da empresa Chegg que, no início da quarentena, estava convencido de que a produtividade cairia de 15 a 20%. Para evitar isso ao máximo, ele montou um canal Slack com seus dois representantes mais próximos, onde eles começaram a se comunicar incessantemente, mesmo enquanto passavam horas por dia nas mesmas reuniões do Zoom. Ele começou a monitorar regularmente muitos dos outros membros de sua equipe. Porém, ele viu que isso desgastava tanto ele quanto seus funcionários e percebeu que essa presença online constante se tornava um incômodo para todos. Com isso, ele se afastou um pouco. Com o decorrer das semanas, ele começou a notar que os projetos estavam sendo entregues dentro do cronograma e muitos funcionários estavam até completando tarefas extras. !
 
+https://cacm.acm.org/system/assets/0003/7619/063020_Yann_Bastard_productivity.large.jpg?1593529463&1593529462
+
 Uma pesquisa do Deutsche Bank com trabalhadores de países afetados pelo coronavírus constatou que, em média, os norte-americanos sentiam que eram mais produtivos do que antes da pandemia, enquanto os europeus consideravam menos produtivos.
 
 No início da quarentena, muitos gerentes temiam a queda da produtividade, principalmente pelas distrações que ocorrem em casa, por exemplo, cuidar de filhos durante o trabalho, tarefas domésticas, distrações com entretenimentos e muitas outras coisas. Muitos estão tendo esses problemas e se encontrando em uma difícil adaptação. Porém, outros não, principalmente aqueles que não precisam preocupar com crianças.
