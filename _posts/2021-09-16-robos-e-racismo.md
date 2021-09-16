@@ -6,12 +6,18 @@ author-post: Gabriel Ribeiro
 title: Robôs e Racismo
 image: ''
 description: Teste do atirador mostra que pessoas tendem a racializar os robôs
-introduction: ''
+introduction: Percebendo a tendência de que a maioria dos robôs são fabricados com
+  material de cor branca ou metálica, os pesquisadores de um laboratório da Nova Zelândia,
+  investigaram por meio do “teste do atirador” e de um robusto questionário se as
+  pessoas identificam, de forma automática, os robôs de forma racializada. Isto é,
+  se as pessoas percebem os robôs como brancos, negros ou asiáticos conforme sua aparência.
 main-class: comp
 color: "#265AA9"
 tags:
+- ''
+- Racism
+- Robots
 - Tech
-- Home Office
 - Comp
 categories: Comp
 twitter_text: ''
