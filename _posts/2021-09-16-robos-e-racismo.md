@@ -5,7 +5,7 @@ date: 2021-09-16 00:00:00 -0300
 author-post: Gabriel Ribeiro
 title: Robôs e Racismo
 image: ''
-description: ''
+description: Teste do atirador mostra que pessoas tendem a racializar os robôs
 introduction: ''
 main-class: comp
 color: "#265AA9"
