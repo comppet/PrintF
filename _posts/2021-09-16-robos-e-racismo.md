@@ -14,7 +14,6 @@ introduction: Percebendo a tendência de que a maioria dos robôs são fabricado
 main-class: comp
 color: "#265AA9"
 tags:
-- ''
 - Racism
 - Robots
 - Tech
