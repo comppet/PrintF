@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-date: 2020-08-08 22:45:00 -0300
+date: 2021-10-04 00:00:00 -0300
 author-post: Rodrigo Zamboni
 title: Reconhecimento Facial e outro conjunto de IAs “arriscadas” e suas restrições
   na União Europeia.
