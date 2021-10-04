@@ -11,8 +11,10 @@ introduction: União Européia adota nova regulamentação para dados sensíveis
 main-class: comp
 color: "#265AA9"
 tags:
+- Data
+- Security
+- IA
 - Tech
-- Home Office
 - Comp
 categories: Comp
 twitter_text: ''
