@@ -12,7 +12,7 @@ main-class: comp
 color: ''
 tags:
 - osn
-- rede sociais
+- redes sociais
 - IA
 - comp
 categories: comp
