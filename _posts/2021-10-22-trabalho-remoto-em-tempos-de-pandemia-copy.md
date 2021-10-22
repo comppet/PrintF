@@ -11,8 +11,8 @@ introduction: Como a tecnologia afetará o mercado de trabalho
 main-class: comp
 color: "#265AA9"
 tags:
+- Jobs
 - Tech
-- Home Office
 - Comp
 categories: Comp
 twitter_text: ''
