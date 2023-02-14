@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-date: 2023-01-14 23:00:00 -0300
+date: 2023-01-20 23:00:00 -0300
 author-post: Marcus Vinícius Torres Silva
 title: 'Humans and AI: Problem Finders and Problem Solvers'
 image: ''
@@ -18,7 +18,7 @@ twitter_text: ''
 
 ---
 
-**Título do Artigo:** Humans and AI: Problem Finders and Problem Solvers'
+**Título do Artigo:** Humans and AI: Problem Finders and Problem Solvers
 
 **Autor:** Ben Dickson
 
