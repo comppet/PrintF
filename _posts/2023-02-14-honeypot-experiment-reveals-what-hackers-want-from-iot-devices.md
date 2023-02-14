@@ -34,13 +34,13 @@ Três honeypots para simular alguns serviços foram utilizados:
  - HoneyWindowsBox para emular dispositivos IoT rodando Windows
  - HoneyCamera para emular várias câmeras IP da Hikvision, D-Link, entre outras
 
-![alt text](https://github.com/comppet/PrintF/blob/master/assets/img/downloads/honeypotIMG1.jpeg)
+![](../assets/img/downloads/honeypotIMG1.jpeg)
 
 Um ponto interessante na metodologia utilizada foi a atualização das configurações de segurança dos honeypots de acordo com os dados já obtidos. Isso possibilita a obtenção de dados mais diversificados e detalhados.
 
 Os resultados do experimento mostraram um total de 22.6 milhões de ataques divididos da seguinte forma:
 
-![alt text](http://PrintF/assets/img/downloads/honeypotIMG2.jpg)
+![](../assets/img/downloads/honeypotIMG2.jpeg)
 
 Os pesquisadores identificaram que vários ataques seguiam um padrão, o que pode significar que possuíam objetivos e métodos semelhantes. Alguns exemplos citados foram: a utilização de comandos como, “masscan” para escanear portas abertas, "/etc/init.d/iptables stop" para desabilitar firewalls e comandos para coletar características do hardware como, “free -m", "lspci grep VGA", e "cat /proc/cpuinfo".
 
