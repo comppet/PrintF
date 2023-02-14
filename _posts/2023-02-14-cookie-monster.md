@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-date: 2023-02-14 12:00:00 -0300
+date: 2023-02-14 00:00:00 -0300
 author-post: Dahlan P. Gardim
 title: 'Resenha do Artigo: “Cookie Monster”'
 image: ''
