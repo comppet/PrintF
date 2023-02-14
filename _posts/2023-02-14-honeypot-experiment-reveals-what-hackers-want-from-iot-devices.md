@@ -1,8 +1,8 @@
 ---
 layout: post
 comments: true
-date: 2023-01-11 12:00:00 -0300
-author-post: Huryel Souto Costa
+date: 2023-01-14 12:00:00 -0300
+author-post: Lucas Guimarães Mendes
 title: O que os invasores procuram em dispositivos IoT?
 image: ''
 description: O que atrai os Hackers nos dispositivos IoT modernos?
