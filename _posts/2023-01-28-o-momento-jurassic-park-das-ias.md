@@ -5,8 +5,8 @@ date: 2023-01-28 12:00:00 -0300
 author-post: Rodrigo Zamboni Silva
 title: 'O momento “Jurassic Park” das IAs'
 image: ''
-description: Os Humanos e as Inteligências Artificiais são descobridores ou resolvedores de problemas
-introduction: Os Humanos e as Inteligências Artificiais são descobridores ou resolvedores de problemas
+description: Por que faz sentido comparar os tempos modernos com a era dos dinossauros?
+introduction: Por que faz sentido comparar os tempos modernos com a era dos dinossauros?
 main-class: comp
 color: "#265AA9"
 tags:
