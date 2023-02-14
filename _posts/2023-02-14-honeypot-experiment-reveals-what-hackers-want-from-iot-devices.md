@@ -20,7 +20,7 @@ twitter_text: ''
 
 **Título do Artigo:** Honeypot experiment reveals what hackers want from IoT devices
 
-**Link:**  [Honeypot Experiment Reveals What Hackers Want From IoT Devices | News | Communications of the ACM](https://cacm.acm.org/news/257716-honeypot-experiment-reveals-what-hackers-want-from-iot-devices/fulltext)
+**Link:**  [Honeypot Experiment Reveals What Hackers Want From IoT Devices.](https://cacm.acm.org/news/257716-honeypot-experiment-reveals-what-hackers-want-from-iot-devices/fulltext)
 
 **Link (Versão Completa):** [What are Attackers after on IoT Devices?](https://arxiv.org/pdf/2112.10974.pdf)
 
@@ -34,13 +34,13 @@ Três honeypots para simular alguns serviços foram utilizados:
  - HoneyWindowsBox para emular dispositivos IoT rodando Windows
  - HoneyCamera para emular várias câmeras IP da Hikvision, D-Link, entre outras
 
-![](/PrintF/assets/img/downloads/honeypotIMG1.jpg)
+![alt text](https://github.com/comppet/PrintF/blob/master/assets/img/downloads/honeypotIMG1.jpeg)
 
 Um ponto interessante na metodologia utilizada foi a atualização das configurações de segurança dos honeypots de acordo com os dados já obtidos. Isso possibilita a obtenção de dados mais diversificados e detalhados.
 
 Os resultados do experimento mostraram um total de 22.6 milhões de ataques divididos da seguinte forma:
 
-![](/PrintF/assets/img/downloads/honeypotIMG2.jpg)
+![alt text](http://PrintF/assets/img/downloads/honeypotIMG2.jpg)
 
 Os pesquisadores identificaram que vários ataques seguiam um padrão, o que pode significar que possuíam objetivos e métodos semelhantes. Alguns exemplos citados foram: a utilização de comandos como, “masscan” para escanear portas abertas, "/etc/init.d/iptables stop" para desabilitar firewalls e comandos para coletar características do hardware como, “free -m", "lspci grep VGA", e "cat /proc/cpuinfo".
 
